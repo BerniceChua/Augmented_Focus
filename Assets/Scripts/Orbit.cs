@@ -5,7 +5,7 @@ using UnityEngine;
 public class Orbit : MonoBehaviour {
 
     public Transform target;
-    [SerializeField] float m_multiplier = 10.0f;
+    [SerializeField] float m_speedMultiplier = 10.0f;
     [SerializeField] float m_slideBackwards = 1.0f;
 
     // Use this for initialization
@@ -19,10 +19,12 @@ public class Orbit : MonoBehaviour {
 
         //transform.RotateAround(target.position, target.up, speed * Time.deltaTime);
 
-        float speedOfGamePiece = GetSpeed();
+        if (this.enabled) {
+            float speedOfGamePiece = GetSpeed();
 
-        //transform.RotateAround(target.position, target.up, speedOfGamePiece);
-        transform.RotateAround(target.position, Vector3.up, -m_slideBackwards + speedOfGamePiece);
+            //transform.RotateAround(target.position, target.up, speedOfGamePiece);
+            transform.RotateAround(target.position, Vector3.up, -m_slideBackwards + speedOfGamePiece);
+        }
     }
 
     public float GetSpeed()
@@ -31,7 +33,7 @@ public class Orbit : MonoBehaviour {
 
         //m_previousSpeed = Input.acceleration.x;
 
-        float speed = Mathf.Abs(Input.gyro.attitude.x) * m_multiplier;
+        float speed = Mathf.Clamp(Mathf.Abs(Input.gyro.attitude.x) * m_speedMultiplier, 0.0f, 1.5f);
 
         return speed;
     }
