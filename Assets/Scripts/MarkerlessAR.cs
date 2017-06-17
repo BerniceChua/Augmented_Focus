@@ -45,14 +45,14 @@ public class MarkerlessAR : MonoBehaviour {
         }
 
         /// Both services are supported, so let's enable them.
-        cameraContainer = new GameObject("Camera Contaner");
-        cameraContainer.transform.position = transform.position;
-        transform.SetParent(cameraContainer.transform);
+        //cameraContainer = new GameObject("Camera Contaner");
+        //cameraContainer.transform.position = transform.position;
+        //transform.SetParent(cameraContainer.transform);
 
         gyro = Input.gyro;
         gyro.enabled = true;
-        cameraContainer.transform.rotation = Quaternion.Euler(90.0f, 0.0f, 0.0f);
-        rotation = new Quaternion(0, 0, 1, 0); /// makes sure that it's pointing forward
+        //cameraContainer.transform.rotation = Quaternion.Euler(90.0f, 0.0f, 0.0f);
+        //rotation = new Quaternion(0, 0, 1, 0); /// makes sure that it's pointing forward
 
         cam.Play();
         background.texture = cam;

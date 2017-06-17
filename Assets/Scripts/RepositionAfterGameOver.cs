@@ -6,6 +6,7 @@ public class RepositionAfterGameOver : MonoBehaviour {
     [SerializeField] TimeElapsed m_timeElapsed;
     [SerializeField] GameObject m_gamePiece;
     [SerializeField] Camera m_camera;
+    [SerializeField] float m_radiusOfOrbit = 34.77f;
 
     Vector3 m_whereCameraIsPointing;
 
@@ -17,7 +18,11 @@ public class RepositionAfterGameOver : MonoBehaviour {
         //m_initialRotation = m_gamePiece.transform.rotation;
         m_initialRotation = Quaternion.Euler(0.0f, 90.0f, 0.0f);
         m_initialPosition = new Vector3(0, -5, 44.77f);
-        m_whereCameraIsPointing = m_camera.ViewportToWorldPoint(m_camera.transform.forward * 144.77f);
+        //m_whereCameraIsPointing = m_camera.ViewportToWorldPoint(m_camera.transform.forward * m_initialPosition.z);
+        //m_whereCameraIsPointing = m_camera.ViewportToWorldPoint(m_camera.transform.forward * 144.77f);
+        //m_whereCameraIsPointing = m_camera.ViewportToWorldPoint(Vector3.forward * 144.77f);
+        //m_whereCameraIsPointing = m_camera.ViewportToWorldPoint(Vector3.forward * m_radiusOfOrbit);
+        m_whereCameraIsPointing = m_camera.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, m_radiusOfOrbit));
     }
 
     // Update is called once per frame
