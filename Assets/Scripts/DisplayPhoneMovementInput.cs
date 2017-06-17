@@ -55,7 +55,8 @@ public class DisplayPhoneMovementInput : MonoBehaviour{
             //"\n(Input.gyro.attitude.x - m_previousSpeed) = " + (Input.gyro.attitude.x - m_previousSpeed).ToString() +
             "\nm_gamePiece.transform.position = " + m_gamePiece.transform.position.ToString() +
             "\nm_gamePiece.transform.rotation = " + m_gamePiece.transform.rotation.ToString() +
-            "\nm_cameraPosition.transform = " + m_cameraPosition.transform.position.ToString() +
+            "\nm_gamePiece.Orbit.GetSpeed() = " + m_gamePiece.GetComponent<Orbit>().GetSpeed() +
+            //"\nm_cameraPosition.transform = " + m_cameraPosition.transform.position.ToString() +
            "\nTime.timeScale = " + Time.timeScale +
             "\nm_lastPosition = " + m_lastPosition.ToString();
     }
