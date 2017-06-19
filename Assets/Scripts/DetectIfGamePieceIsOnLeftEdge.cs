@@ -7,22 +7,52 @@ public class DetectIfGamePieceIsOnLeftEdge : MonoBehaviour {
 
     [SerializeField] TimeElapsed m_timeElapsed;
 
-    Camera m_camera { get { return GetComponent<Camera>(); } set { m_camera = value; } }
+    [SerializeField] float m_angle;
 
-	// Use this for initialization
-	void Start () {
+    Camera m_camera { get { return GetComponent<Camera>(); } set { m_camera = value; } }
+    Vector3 m_viewPosition;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 viewPosition = m_camera.WorldToViewportPoint(m_target.position);
+        m_viewPosition = m_camera.WorldToViewportPoint(m_target.position);
 
-        if (viewPosition.x < 0.01f) {
+        if (m_viewPosition.x < 0.01f) {
             Debug.Log("It's game over, man; game over!");
             m_timeElapsed.GameOver();
         }
 
         return;
 	}
+
+    public Vector3 GetViewPosition() {
+        return m_viewPosition;
+    }
+
+    private void OnDrawGizmos()
+    {
+        /*Gizmos.color = Color.cyan;
+
+        if (m_selectedTarget != null) {
+            Gizmos.DrawLine(transform.position, m_selectedTarget.transform.position);
+        }*/
+
+        Gizmos.color = Color.cyan;
+
+        /// to the right of the normal line coming out of transform.position
+        Gizmos.DrawLine(transform.position, transform.position + GetViewAngle(m_angle / 2) * 50.0f);
+        /// to the left of the normal line coming out of transform.position
+        Gizmos.DrawLine(transform.position, transform.position + GetViewAngle(-m_angle / 2) * 50.0f);
+    }
+
+    Vector3 GetViewAngle(float angle)
+    {
+        float radian = (angle + transform.eulerAngles.y) * Mathf.Deg2Rad;
+        return new Vector3(Mathf.Sin(radian), 0, Mathf.Cos(radian));
+    }
+
 }
