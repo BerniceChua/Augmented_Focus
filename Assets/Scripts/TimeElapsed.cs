@@ -15,7 +15,7 @@ public class TimeElapsed : MonoBehaviour {
 
     public bool m_gameOver = false;
 
-    float m_runningTime;
+    public float m_RunningTime;
     float m_endingTime;
     [SerializeField] ScoreTime m_scoreTime;
 
@@ -35,6 +35,8 @@ public class TimeElapsed : MonoBehaviour {
     [SerializeField] RepositionAfterGameOver m_resetGamePiece;
 
     [SerializeField] Orbit m_orbit;
+
+    [SerializeField] DetectIfGamePieceLeavesScreenView m_detectGameOver;
 
     //void Awake()
     //{
@@ -57,9 +59,10 @@ public class TimeElapsed : MonoBehaviour {
         }
 
         Timer();
+        m_timeElapsed.text = DisplayFormattedTime(Timer());
     }
 
-    public void Timer()
+    public float Timer()
     {
         //int minutes = Mathf.FloorToInt(m_timer / 60);
         //int seconds = Mathf.FloorToInt(m_timer % 60);
@@ -76,8 +79,9 @@ public class TimeElapsed : MonoBehaviour {
         //m_timeElapsed.text = timerFormatted;
 
         //float m_runningTime = Time.time - m_startTime;
-        m_runningTime = Time.time - m_startTime;
-        m_timeElapsed.text = DisplayFormattedTime(m_runningTime);
+        m_RunningTime = Time.time - m_startTime;
+        //m_timeElapsed.text = DisplayFormattedTime(m_RunningTime);
+        return m_RunningTime;
     }
 
     public string DisplayFormattedTime(float unformattedTime) {
@@ -91,6 +95,9 @@ public class TimeElapsed : MonoBehaviour {
     }
 
     public void ResetTime() {
+        m_detectGameOver.enabled = false;
+        m_timeElapsed.enabled = true;
+        print("I am inside ResetTime(), after 'm_timeElapsed.enabled = false;'.");
         m_gameOver = false;
         m_timeElapsed.color = Color.white;
         m_startTime = Time.time;
@@ -105,7 +112,7 @@ public class TimeElapsed : MonoBehaviour {
         //Debug.Log("m_ScoreTime[m_timeElapsed.text] = " + m_ScoreTime[m_timeElapsed.text]);
 
         m_gameManager.PauseGame();
-        m_endingTime = m_runningTime;
+        m_endingTime = m_RunningTime;
         //m_scoreTime.FindHigherScore("Best Time", m_scoreTime.ShowCurrentHighScore("Best Time"), m_runningTime);
         m_scoreTime.FindHigherScore("Best Time", m_endingTime);
         //Debug.Log(PlayerPrefs.GetFloat("Best Time"));
@@ -134,6 +141,7 @@ public class TimeElapsed : MonoBehaviour {
 
         m_orbit.enabled = false;
         m_resetGamePiece.ResetPosition();
+        m_detectGameOver.enabled = false;
         //m_displayGameOverScreen.DisplayGameOverMessage();
         StartCoroutine(DisplayGameOverMessage());
     }
@@ -141,9 +149,10 @@ public class TimeElapsed : MonoBehaviour {
     public IEnumerator DisplayGameOverMessage() {
         Debug.Log("Hello");
         /// Add a paused time between these 2 events.
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(3);
         Debug.Log("Hello from the other side!!!");
 
+        m_detectGameOver.enabled = false;
         /// Add some fancy text animations.
         m_timerObject.enabled = false;
         m_gameOverDisplay.SetActive(true);
@@ -159,7 +168,10 @@ public class TimeElapsed : MonoBehaviour {
 
         }
 
-        yield return new WaitForSecondsRealtime(3);
+        yield return new WaitForSecondsRealtime(5);
+        m_detectGameOver.enabled = false;
+        m_timeElapsed.enabled = false;
+        //m_timeElapsed.GetComponent<TimeElapsed>().enabled = false;
         m_gameOverDisplay.SetActive(false);
         m_newHighScore.SetActive(false);
         m_timerObject.enabled = true;
