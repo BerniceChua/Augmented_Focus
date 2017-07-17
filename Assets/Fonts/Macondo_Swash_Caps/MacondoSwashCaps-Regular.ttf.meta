@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 07409535bb5895649878169fa14e2ad8
+timeCreated: 1500166020
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Macondo Swash Caps
+  fontNames:
+  - Macondo Swash Caps
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
