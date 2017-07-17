@@ -1,32 +1,37 @@
-# Dizzy
-Augmented Reality 'endless runner' game made with Unity & C#, which uses an Android phone's built-in sensors (gyroscope & accelerometer) to control the player character's movements.  Spin around faster to move faster!  Before playing, please make sure that you have ample space to move around, and that you are in a safe area with no people or things that could obstruct your movement or injure you.
+# Augmented Focus
+An Augmented Reality (AR) game made with Unity & C#, which challenges how long a player can keep track of a fidgety flying creature such as a hummingbird.  
 
-This project started out as our entry for [AT&T VR/AR Hackathon - Bay Area](https://www.eventbrite.com/e/att-vrar-hackathon-bay-area-tickets-33467242423#).  In this prototype for an AR "game", players move the player character by spinning themselves around while holding their phone.  The faster you spin, the faster your character moves.  
+Before playing, please make sure that you have ample space to move around, and that you are in a safe area with no people or things that could obstruct your movement or injure you.  
 
-The player spins like this guy <https://www.youtube.com/watch?v=r06KkBHq354> but imagine that guy holding the phone in front of him.  He needs to do that so he can see the screen, and see the player character.
+The player searches for the hummingbird, 
 
 
 ## About
-Niko Korolog had the idea to create a new way of playing with augmented reality using a smartphone's built-in sensors, but he needed a programmer to materialize his vision.  I was intrigued by his idea.  
+"Augmented Focus" uses an Android phone's built-in camera and built-in sensors (specifically the gyroscope) for the AR to orient the phone and the game piece.  
 
-This was my first time working with augmented reality and using the phone sensors.  I took this hackathon as an opportunity to try something out of my comfort zone, and learn something new.  I have learned how to use 'markerless' AR, and I have explored the different ways that Unity accesses a smartphone's sensors.  
+This is my second project working with 'markerless' augmented reality and using the phone sensors.  
 
-The rest of the 'history' of my experimentation is here: <https://github.com/BerniceChua/Dizzy_Unity5-4-5>
+I took the foundations of what I learned from [Dizzy](https://github.com/BerniceChua), and expanded on the gameplay while refactoring/improving the code.  
+
+I CANNOT STRESS THIS ENOUGH: Before playing, please make sure that you have ample space to move around, and that you are in a safe area with no people or things that could obstruct your movement or injure you.  
+
 
 ### Technologies Used
 - Unity3D
 - C#
 - git
 - GitHub
+- Android built-in camera
+- Android built-in gyroscope
+- music was composed with [the Oskar Fischinger Google Doodle](https://www.google.com/doodles/oskar-fischingers-117th-birthday)
+- from the Unity Asset Store: hummingird modelling & animation by Junnichi Suko
+
 
 ### Contributor List (in alphabetical order) - Who Made This?
 - Bernice Anne W. Chua (game developer)
   - [GitHub](https://github.com/BerniceChua)
   - [LinkedIn](https://linkedin.com/in/bernicechua415)
   - [Twitter](https://twitter.com/ChuaBernice)
-- Niko Korolog (musician and idea-originator)
-  - [LinkedIn](https://www.linkedin.com/in/niko-korolog-64699834/)
-  - [Twitter](https://twitter.com/nikokorolog)
 
 ## Contributing
 
@@ -37,11 +42,14 @@ Bernice welcomes any pull requests people might have.
 
 Bernice welcomes any and all the feedbacks! ^_^  You can use the above links to contact her.
 
-Please send feedback by [opening a new Issue](https://github.com/BerniceChua/the-hurt-locker-sweeper/issues/new), or by [clicking on the Issues tab above](https://github.com/BerniceChua/the-hurt-locker-sweeper/issues).  Feedback can also be sent to Bernice through the links under her name in the contributor list.
+Please send feedback by [opening a new Issue](https://github.com/BerniceChua/Augmented_Focus/issues/new), or by [clicking on the Issues tab above](https://github.com/BerniceChua/Augmented_Focus/issues).  Feedback can also be sent to Bernice through the links under her name in the contributor list.
 
 ## Issues
 ### To-Dos & Stretch Goals:
-1. UI & UX (completed).
-2. Keeping score (completed).
-3. MAYBE: Add incentives for players to move faster (if player hits the side of the screen it is running away from, it will explode).
-4. MAYBE: Add movement options (jumping).
+1. Keeping score & tracking time properly (completed).  
+2. Choose a font that fits the mood better.  
+3. UI & UX improvements - add option to adjust or mute the music & sounds.
+4. UI & UX improvements - aethetics/color.
+5. Add creature sounds
+6. Add difficulty levels (easy = slower speed and less variations in movement, medium = a bit faster speed and slightly more variations in movement, difficult = very fast movement speeds and a wide variation in movement).
+7. Add different creatures (other flying creatures? but more likely other species of hummingbirds) to choose from? (OPTIONAL)
