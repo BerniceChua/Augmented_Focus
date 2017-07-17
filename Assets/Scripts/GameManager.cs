@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour {
     //[SerializeField] GameObject m_splashScreen;
     [SerializeField] Text m_timeElapsedText;
 
+    [SerializeField] ScoreTime m_scoreTime;
+    float m_endingTime;
+
     //private int floorMask = LayerMask.GetMask("Floor");
 
     bool m_gameOver = false;
@@ -88,7 +91,7 @@ public class GameManager : MonoBehaviour {
     }
 
     public void GameOver() {
-
+        PauseGame();
     }
 
     public void QuitGame()
