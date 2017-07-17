@@ -8,6 +8,9 @@ public class DisplayPhoneMovementInput : MonoBehaviour{
     [SerializeField] Camera m_camera;
     [SerializeField] Orbit m_orbit;
 
+    [SerializeField] DetectIfGamePieceLeavesScreenView m_detectGameOver;
+    [SerializeField] SenseIfGamePieceIsCentered m_centeredGameObj;
+
     Text m_text { get { return GetComponent<Text>(); } set { m_text = value; } }
 
     Vector3 m_lastPosition = Vector3.zero;
@@ -17,10 +20,13 @@ public class DisplayPhoneMovementInput : MonoBehaviour{
     Vector3 m_whereCameraIsPointing;
     Vector3 m_screenPosition;
 
+    float m_radiusOfOrbit = 2.0f;
+
     // Use this for initialization
     void Start()
     {
-        m_whereCameraIsPointing = m_camera.ViewportToWorldPoint(m_camera.transform.forward);
+        //m_whereCameraIsPointing = m_camera.ViewportToWorldPoint(m_camera.transform.forward);
+        m_whereCameraIsPointing = m_camera.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, 2));
         m_screenPosition = m_camera.WorldToViewportPoint(this.transform.position);
     }
 
@@ -28,7 +34,8 @@ public class DisplayPhoneMovementInput : MonoBehaviour{
     void Update()
     {
         string gyroAttitude = Input.gyro.attitude.ToString();
-        m_whereCameraIsPointing = m_camera.ViewportToWorldPoint(m_camera.transform.forward);
+        //m_whereCameraIsPointing = m_camera.ViewportToWorldPoint(m_camera.transform.forward);
+        m_whereCameraIsPointing = m_camera.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, m_radiusOfOrbit));
 
         //float speed = (Input.acceleration - m_lastPosition).magnitude / Time.deltaTime;
         //float speed = (Input.acceleration.x - m_lastPosition.x) / Time.deltaTime;
@@ -49,19 +56,19 @@ public class DisplayPhoneMovementInput : MonoBehaviour{
         float speed = m_currentGyroValue - m_previousGyroValue;
 
         m_text.text = "Gyro Attitude = " + gyroAttitude +
-            "\n Input.gyro.attitude.x = " + Input.gyro.attitude.x.ToString() +
-            "\ncurrentGyroValue = " + (Mathf.Round(Mathf.Abs(m_currentGyroValue) * 100)).ToString() +
-            "\nm_previousSpeed = " + (Mathf.Round(Mathf.Abs(m_previousGyroValue) * 100)).ToString() +
+            //"\n Input.gyro.attitude.x = " + Input.gyro.attitude.x.ToString() +
+            //"\ncurrentGyroValue = " + (Mathf.Round(Mathf.Abs(m_currentGyroValue) * 100)).ToString() +
+            //"\nm_previousSpeed = " + (Mathf.Round(Mathf.Abs(m_previousGyroValue) * 100)).ToString() +
             //"\nAccelerometer = " + Input.acceleration.ToString() +
-            "\nm_orbit.GetSpeed() = " + m_orbit.GetSpeed()/*.ToString()*/ +
             "\nm_gamePiece.GetComponent<Orbit>().enabled = " + m_gamePiece.GetComponent<Orbit>().enabled +
-            //"\nm_whereCameraIsPointing = " + m_whereCameraIsPointing +
+            "\nm_whereCameraIsPointing = " + m_whereCameraIsPointing +
+            "\nDetectIfGamePieceLeavesScreenView is active? = " + (m_detectGameOver.enabled == true) +
+            "\nSenseIfGamePieceIsCentered is active? = " + (m_centeredGameObj.enabled == true) +
+            "\nm_gamePiece.transform.position = " + m_gamePiece.transform.position.ToString() +
             "\nm_screenPosition.x = " + m_screenPosition.x +
             //"\n(Input.gyro.attitude.x - m_previousSpeed) = " + (Input.gyro.attitude.x - m_previousSpeed).ToString() +
-            "\nm_gamePiece.transform.position = " + m_gamePiece.transform.position.ToString() +
             //"\nm_gamePiece.transform.rotation = " + m_gamePiece.transform.rotation.ToString() +
-            "\nm_gamePiece.Orbit.GetSpeed() = " + m_gamePiece.GetComponent<Orbit>().GetSpeed() +
-           //"\nm_cameraPosition.transform = " + m_cameraPosition.transform.position.ToString() +
+            //"\nm_cameraPosition.transform = " + m_cameraPosition.transform.position.ToString() +
            "\nTime.timeScale = " + Time.timeScale; //+
             //"\nm_lastPosition = " + m_lastPosition.ToString();
         
