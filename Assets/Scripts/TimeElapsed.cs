@@ -53,11 +53,6 @@ public class TimeElapsed : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (m_gameOver) {
-            GameOver();
-            return;
-        }
-
         Timer();
         m_timeElapsed.text = DisplayFormattedTime(Timer());
     }

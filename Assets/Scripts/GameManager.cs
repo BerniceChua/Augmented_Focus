@@ -58,8 +58,10 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (m_gameOver)
+        if (m_gameOver) {
+            GameOver();
             return;
+        }
 
 #if UNITY_EDITOR
         if (Input.GetMouseButton(0))
