@@ -4036,6 +4036,13 @@ MonoBehaviour:
   m_timeElapsed: {fileID: 500}
   m_timeElapsedText: {fileID: 549}
   m_scoreTime: {fileID: 515}
+  m_orbit: {fileID: 526}
+  m_resetGamePiece: {fileID: 517}
+  m_detectGameOver: {fileID: 536}
+  m_gameOverDisplay: {fileID: 101}
+  m_timerObject: {fileID: 549}
+  m_newHighScore: {fileID: 81}
+  m_menuAndPausePanel: {fileID: 126}
 --- !u!114 &499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4050,6 +4057,13 @@ MonoBehaviour:
   m_timeElapsed: {fileID: 500}
   m_timeElapsedText: {fileID: 0}
   m_scoreTime: {fileID: 0}
+  m_orbit: {fileID: 0}
+  m_resetGamePiece: {fileID: 0}
+  m_detectGameOver: {fileID: 0}
+  m_gameOverDisplay: {fileID: 0}
+  m_timerObject: {fileID: 0}
+  m_newHighScore: {fileID: 0}
+  m_menuAndPausePanel: {fileID: 0}
 --- !u!114 &500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5127,7 +5141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.39705884, g: 1, b: 0.39705884, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7922,7 +7936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.39705884, g: 1, b: 0.39705884, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9825,7 +9839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.39705884, g: 1, b: 0.39705884, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
