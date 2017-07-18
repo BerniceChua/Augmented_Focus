@@ -4035,7 +4035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_timeElapsed: {fileID: 500}
   m_timeElapsedText: {fileID: 549}
-  m_scoreTime: {fileID: 0}
+  m_scoreTime: {fileID: 515}
 --- !u!114 &499
 MonoBehaviour:
   m_ObjectHideFlags: 0
