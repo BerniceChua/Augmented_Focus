@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DetectIfGamePieceLeavesScreenView : MonoBehaviour {
+    [SerializeField] GameManager m_gameManager;
+
     [SerializeField] Transform m_target;
 
     [SerializeField] TimeElapsed m_timeElapsed;
@@ -14,16 +16,18 @@ public class DetectIfGamePieceLeavesScreenView : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
         m_viewPosition = m_camera.WorldToViewportPoint(m_target.position);
 
+        m_timeElapsed.enabled = true;
+
         if (m_viewPosition.x < 0.0f || m_viewPosition.x > 1.0f || m_viewPosition.y < 0.0f || m_viewPosition.y > 1.0f) {
             Debug.Log("It's game over, man; game over!");
-            m_timeElapsed.GameOver();
+            m_gameManager.GameOver();
         }
 
         return;
