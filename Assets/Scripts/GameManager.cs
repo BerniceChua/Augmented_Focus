@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] TimeElapsed m_timeElapsed;
     //[SerializeField] GameObject m_splashScreen;
     [SerializeField] Text m_timeElapsedText;
+    [SerializeField] GameObject m_gameHUD;
 
     [SerializeField] ScoreTime m_scoreTime;
     float m_endingTime;
@@ -24,6 +25,8 @@ public class GameManager : MonoBehaviour {
     [SerializeField] Text m_timerObject;
     [SerializeField] GameObject m_newHighScore;
     [SerializeField] GameObject m_menuAndPausePanel;
+
+    [SerializeField] SenseIfGamePieceIsCentered m_senseIfGamePieceIsCentered;
 
     //private int floorMask = LayerMask.GetMask("Floor");
 
@@ -44,23 +47,27 @@ public class GameManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        //if (control == null)
-        //{
-        //    DontDestroyOnLoad(gameObject);
-        //    control = this;
-        //}
-        //else if (control != this)
-        //{
-        //    Destroy(gameObject);
-        //}
+        //    if (control == null)
+        //    {
+        //        DontDestroyOnLoad(gameObject);
+        //        control = this;
+        //    }
+        //    else if (control != this)
+        //    {
+        //        Destroy(gameObject);
+        //    }
         PauseGame();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
+        if (m_senseIfGamePieceIsCentered.m_foundGamePiece == false) {
+            m_timeElapsedText.text = "Look around and find me...";
+        }
+
         if (m_gameOver) {
             GameOver();
-            return;
+            m_senseIfGamePieceIsCentered.ResetFoundGamePiece();
         }
 
 #if UNITY_EDITOR
@@ -75,8 +82,10 @@ public class GameManager : MonoBehaviour {
     void StartTheGame() {
         //m_splashScreen.gameObject.SetActive(false);
 
-        m_timeElapsed.gameObject.SetActive(true);
-        m_timeElapsed.Timer();
+        //m_timeElapsed.gameObject.SetActive(true);
+        //m_timeElapsed.Timer();
+
+        m_senseIfGamePieceIsCentered.enabled = true;
     }
 
     public void ResetGame() {
@@ -149,7 +158,9 @@ public class GameManager : MonoBehaviour {
 
         m_detectGameOver.enabled = false;
         /// Add some fancy text animations.
-        m_timerObject.enabled = false;
+        //m_timerObject.enabled = false;
+        m_gameHUD.SetActive(false);
+        m_timeElapsed.enabled = false;
         m_gameOverDisplay.SetActive(true);
         m_gameOverDisplay.GetComponentInChildren<Text>().text = m_timeElapsed.DisplayFormattedTime(m_endingTime);
         m_gameOverDisplay.GetComponentInChildren<Text>().color = Color.yellow;
@@ -164,13 +175,15 @@ public class GameManager : MonoBehaviour {
 
         yield return new WaitForSecondsRealtime(5);
         m_detectGameOver.enabled = false;
-        m_timeElapsed.enabled = false;
+        //m_timeElapsed.enabled = false;
         //m_timeElapsed.GetComponent<TimeElapsed>().enabled = false;
         m_gameOverDisplay.SetActive(false);
-        m_newHighScore.SetActive(false);
-        m_timerObject.enabled = true;
+        //m_newHighScore.SetActive(false);
+        m_timeElapsedText.text = "Look around and find me...";
+        //m_timerObject.enabled = true;
         m_menuAndPausePanel.SetActive(true);
-        //m_resetGamePiece.ReEnable();
+
+        m_resetGamePiece.ReEnable();
     }
 
 

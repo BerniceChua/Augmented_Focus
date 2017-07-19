@@ -6,7 +6,7 @@ public class DisplayGameOverScreen : MonoBehaviour {
     [SerializeField] GameManager m_gameManager;
     //[SerializeField] TimeElapsed m_timeElapsed;
     [SerializeField] GameObject m_gameOverDisplay;
-    [SerializeField] GameObject m_timerObject;
+    [SerializeField] GameObject m_gameHUD;
     [SerializeField] GameObject m_menuAndPausePanel;
 
 	// Use this for initialization
@@ -22,7 +22,7 @@ public class DisplayGameOverScreen : MonoBehaviour {
     public void DisplayGameOverMessage() {
         m_gameManager.PauseGame();
 
-        m_timerObject.SetActive(false);
+        m_gameHUD.SetActive(false);
         m_gameOverDisplay.SetActive(true);
 
         //m_menuAndPausePanel.SetActive(true);
