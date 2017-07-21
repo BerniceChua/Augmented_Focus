@@ -9,6 +9,8 @@ public class DetectIfGamePieceLeavesScreenView : MonoBehaviour {
 
     [SerializeField] TimeElapsed m_timeElapsed;
 
+    [SerializeField] GameObject m_initialMessageText;
+
     [SerializeField] float m_angle;
 
     Camera m_camera { get { return GetComponent<Camera>(); } set { m_camera = value; } }
@@ -23,6 +25,7 @@ public class DetectIfGamePieceLeavesScreenView : MonoBehaviour {
 	void Update () {
         m_viewPosition = m_camera.WorldToViewportPoint(m_target.position);
 
+        m_initialMessageText.SetActive(false);
         m_timeElapsed.enabled = true;
 
         if (m_viewPosition.x < 0.0f || m_viewPosition.x > 1.0f || m_viewPosition.y < 0.0f || m_viewPosition.y > 1.0f) {
