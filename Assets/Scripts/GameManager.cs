@@ -10,6 +10,7 @@ using UnityEditor;
 #endif
 
 public class GameManager : MonoBehaviour {
+    [SerializeField] GameObject m_initialMessageText;
     [SerializeField] TimeElapsed m_timeElapsed;
     //[SerializeField] GameObject m_splashScreen;
     [SerializeField] Text m_timeElapsedText;
@@ -28,22 +29,23 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] SenseIfGamePieceIsCentered m_senseIfGamePieceIsCentered;
 
+    [SerializeField] VolumePreferences m_volumePreferences;
+
     //private int floorMask = LayerMask.GetMask("Floor");
 
     bool m_gameOver = false;
 
     public static GameManager control;
-    //void Awake() {
-    //    if (control == null)
-    //    {
-    //        DontDestroyOnLoad(gameObject);
-    //        control = this;
-    //    }
-    //    else if (control != this)
-    //    {
-    //        Destroy(gameObject);
-    //    }
-    //}
+    void Awake() {
+        //if (control == null) {
+        //    DontDestroyOnLoad(gameObject);
+        //    control = this;
+        //} else if (control != this) {
+        //    Destroy(gameObject);
+        //}
+        m_volumePreferences.LoadVolumeSettings();
+
+    }
 
     // Use this for initialization
     void Start () {
@@ -61,7 +63,8 @@ public class GameManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (m_senseIfGamePieceIsCentered.m_foundGamePiece == false) {
+        //if (m_senseIfGamePieceIsCentered.m_foundGamePiece == false) {
+        if (m_timeElapsed.enabled == false) {
             m_timeElapsedText.text = "Look around and find me...";
         }
 
@@ -86,6 +89,7 @@ public class GameManager : MonoBehaviour {
         //m_timeElapsed.Timer();
 
         m_senseIfGamePieceIsCentered.enabled = true;
+        m_initialMessageText.SetActive(true);
     }
 
     public void ResetGame() {
@@ -174,8 +178,8 @@ public class GameManager : MonoBehaviour {
         }
 
         yield return new WaitForSecondsRealtime(5);
-        m_detectGameOver.enabled = false;
-        //m_timeElapsed.enabled = false;
+        //m_detectGameOver.enabled = false;
+        m_timeElapsed.enabled = false;
         //m_timeElapsed.GetComponent<TimeElapsed>().enabled = false;
         m_gameOverDisplay.SetActive(false);
         //m_newHighScore.SetActive(false);
