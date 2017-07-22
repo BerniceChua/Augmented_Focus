@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] VolumePreferences m_volumePreferences;
 
+    [SerializeField] ParticleSystem m_fireworks;
+    [SerializeField] Animator m_textAnimator;
     //private int floorMask = LayerMask.GetMask("Floor");
 
     bool m_gameOver = false;
@@ -173,8 +175,9 @@ public class GameManager : MonoBehaviour {
             m_gameOverDisplay.GetComponentInChildren<Text>().color = Color.green;
             Debug.Log("Special message should appear... in 3... 2... 1:");
             yield return new WaitForSecondsRealtime(3);
+            //m_fireworks.Emit(100);
             m_newHighScore.SetActive(true);
-
+            //m_textAnimator.SetBool("AppearOnScreen", true);
         }
 
         yield return new WaitForSecondsRealtime(5);
@@ -182,7 +185,7 @@ public class GameManager : MonoBehaviour {
         m_timeElapsed.enabled = false;
         //m_timeElapsed.GetComponent<TimeElapsed>().enabled = false;
         m_gameOverDisplay.SetActive(false);
-        //m_newHighScore.SetActive(false);
+        m_newHighScore.SetActive(false);
         m_timeElapsedText.text = "Look around and find me...";
         //m_timerObject.enabled = true;
         m_menuAndPausePanel.SetActive(true);
