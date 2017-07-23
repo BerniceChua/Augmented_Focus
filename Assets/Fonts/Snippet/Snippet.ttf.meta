@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 52c16ed9a763dc4459db79749298299c
+timeCreated: 1500770103
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Snippet
+  fontNames:
+  - Snippet
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

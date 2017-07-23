@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 7d7b7588de4acc94180f94a5fc2166c8
+timeCreated: 1500770104
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Oldenburg
+  fontNames:
+  - Oldenburg
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
