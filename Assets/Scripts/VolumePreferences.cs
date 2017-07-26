@@ -29,6 +29,7 @@ public class VolumePreferences : MonoBehaviour {
     private void Awake() {
         if (!PlayerPrefs.HasKey(m_volume)) {
             PlayerPrefs.SetFloat(m_volume, 1.0f);
+            PlayerPrefs.SetFloat(m_volumeSliderPosition, 1.0f);
         }
 
         LoadVolumeSettings();
