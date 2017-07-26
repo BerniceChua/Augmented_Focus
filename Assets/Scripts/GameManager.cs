@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] ParticleSystem m_fireworks;
     [SerializeField] Animator m_textAnimator;
+    [SerializeField] GameObject m_gamePiece;
     //private int floorMask = LayerMask.GetMask("Floor");
 
     bool m_gameOver = false;
@@ -150,6 +151,7 @@ public class GameManager : MonoBehaviour {
         }
 
         m_orbit.enabled = false;
+        m_gamePiece.SetActive(false);
         m_resetGamePiece.ResetPosition();
         m_detectGameOver.enabled = false;
         //m_displayGameOverScreen.DisplayGameOverMessage();
