@@ -43,6 +43,7 @@ public class RepositionAfterGameOver : MonoBehaviour {
     }
 
     public void ResetPosition() {
+#if UNITY_EDITOR
         //if (m_timeElapsed.m_gameOver) {
         //m_gamePiece.transform.position.Set(0, -5, 44.77f);
         Debug.Log("m_whereCameraIsPointing = " + m_whereCameraIsPointing);
@@ -52,14 +53,23 @@ public class RepositionAfterGameOver : MonoBehaviour {
         //m_gamePiece.transform.rotation = m_initialRotation;
         //m_gamePiece.SetActive(false);
         //m_gamePiece.GetComponent<Orbit>().enabled = false;
-    //}
+        //}
+#else
+        //m_gamePiece.transform.position = new Vector3(Random.Range(-2.0f, 0.0f), Random.Range(-2.0f, 2.0f), m_radiusOfOrbit);
+        m_gamePiece.transform.position = new Vector3(-2.0f, 2.0f, m_radiusOfOrbit);
+#endif
     }
 
     public void ReEnable() {
+#if UNITY_EDITOR
         m_gamePiece.transform.position = new Vector3(m_whereCameraIsPointing.x, m_whereCameraIsPointing.y, m_whereCameraIsPointing.z);
         //m_gamePiece.transform.position = m_whereCameraIsPointing;
         //m_gamePiece.transform.position.Set(m_whereCameraIsPointing.x, m_whereCameraIsPointing.y, m_whereCameraIsPointing.z);
         //m_gamePiece.transform.rotation = m_initialRotation;
+#else
+        //m_gamePiece.transform.position = new Vector3(Random.Range(-2.0f, 0.0f), Random.Range(-2.0f, 2.0f), m_radiusOfOrbit);
+        m_gamePiece.transform.position = new Vector3(-2.0f, 2.0f, m_radiusOfOrbit);
+#endif
         m_gamePiece.SetActive(true);
         m_gamePiece.GetComponent<Orbit>().enabled = true;
     }
