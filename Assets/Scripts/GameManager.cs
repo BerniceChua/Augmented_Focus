@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour {
     [SerializeField] ParticleSystem m_fireworks;
     [SerializeField] Animator m_textAnimator;
     [SerializeField] GameObject m_gamePiece;
+    [SerializeField] Animator m_gamePieceAnimator;
+    [SerializeField] WingAnimationSpeed m_wingAnimationSpeed;
     //private int floorMask = LayerMask.GetMask("Floor");
 
     bool m_gameOver = false;
@@ -48,6 +50,16 @@ public class GameManager : MonoBehaviour {
         //}
         m_volumePreferences.LoadVolumeSettings();
 
+        // Makes sure that the animation is turned off in the beginning.
+        //m_gamePiece.GetComponentInChildren<Animator>().enabled = false;
+        if (m_gamePieceAnimator.isActiveAndEnabled)
+            m_gamePieceAnimator.enabled = false;
+        
+        if (m_wingAnimationSpeed.isActiveAndEnabled)
+            m_wingAnimationSpeed.enabled = false;
+
+        // Makes sure that game piece is invisible in the beginning.
+        m_gamePiece.SetActive(false);
     }
 
     // Use this for initialization
@@ -98,6 +110,10 @@ public class GameManager : MonoBehaviour {
     public void ResetGame() {
         StartTheGame();
         m_timeElapsedText.color = Color.white;
+
+        m_gamePiece.SetActive(true);
+        m_gamePieceAnimator.enabled = true;
+        m_wingAnimationSpeed.enabled = true;
     }
 
     public void GoToMainMenu() {
@@ -152,6 +168,7 @@ public class GameManager : MonoBehaviour {
 
         m_orbit.enabled = false;
         m_gamePiece.SetActive(false);
+        m_gamePiece.GetComponentInChildren<Animator>().enabled = false;
         m_resetGamePiece.ResetPosition();
         m_detectGameOver.enabled = false;
         //m_displayGameOverScreen.DisplayGameOverMessage();
