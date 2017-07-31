@@ -11,7 +11,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Chua Productions
-  productName: Augmented Focus
+  productName: Augmented Focus Closed Beta
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21176471, a: 1}
@@ -137,7 +137,7 @@ PlayerSettings:
   protectGraphicsMemory: 0
   useHDRDisplay: 0
   applicationIdentifier:
-    Android: com.ChuaProductions.AugmentedFocus
+    Android: com.ChuaProductions.AugmentedFocusClosedBeta
     Standalone: unity.Chua Productions.Dizzy
     Tizen: com.ChuaProductions.Dizzy
     iOS: com.ChuaProductions.Dizzy

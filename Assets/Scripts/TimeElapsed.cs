@@ -53,13 +53,13 @@ public class TimeElapsed : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (m_gameOver) {
-            GameOver();
-            return;
-        }
-
+        //if (m_detectGameOver.enabled == false) {
+        //    m_timeElapsed.text = "Look around and find me...";
+        //} else {
+        //    Timer();
+        //    m_timeElapsed.text = DisplayFormattedTime(Timer());
+        //}
         Timer();
-        m_timeElapsed.text = DisplayFormattedTime(Timer());
     }
 
     public float Timer()
@@ -80,7 +80,7 @@ public class TimeElapsed : MonoBehaviour {
 
         //float m_runningTime = Time.time - m_startTime;
         m_RunningTime = Time.time - m_startTime;
-        //m_timeElapsed.text = DisplayFormattedTime(m_RunningTime);
+        m_timeElapsed.text = DisplayFormattedTime(m_RunningTime);
         return m_RunningTime;
     }
 
@@ -101,6 +101,7 @@ public class TimeElapsed : MonoBehaviour {
         m_gameOver = false;
         m_timeElapsed.color = Color.white;
         m_startTime = Time.time;
+        Timer();
     }
 
     public void GameOver() {
