@@ -52,11 +52,11 @@ public class GameManager : MonoBehaviour {
 
         // Makes sure that the animation is turned off in the beginning.
         //m_gamePiece.GetComponentInChildren<Animator>().enabled = false;
-        if (m_gamePieceAnimator.isActiveAndEnabled)
-            m_gamePieceAnimator.enabled = false;
+        //if (m_gamePieceAnimator.isActiveAndEnabled)
+        //    m_gamePieceAnimator.enabled = false;
         
-        if (m_wingAnimationSpeed.isActiveAndEnabled)
-            m_wingAnimationSpeed.enabled = false;
+        //if (m_wingAnimationSpeed.isActiveAndEnabled)
+        //    m_wingAnimationSpeed.enabled = false;
 
         // Makes sure that game piece is invisible in the beginning.
         m_gamePiece.SetActive(false);
@@ -168,7 +168,10 @@ public class GameManager : MonoBehaviour {
 
         m_orbit.enabled = false;
         m_gamePiece.SetActive(false);
-        m_gamePiece.GetComponentInChildren<Animator>().enabled = false;
+        //m_gamePiece.GetComponentInChildren<Animator>().enabled = false;
+        m_gamePieceAnimator.enabled = false;
+        m_wingAnimationSpeed.enabled = false;
+
         m_resetGamePiece.ResetPosition();
         m_detectGameOver.enabled = false;
         //m_displayGameOverScreen.DisplayGameOverMessage();
