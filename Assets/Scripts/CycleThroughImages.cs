@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CycleThroughImages : MonoBehaviour {
 
-    [SerializeField] GameObject m_parentPanel;
     [SerializeField] float m_timeToWait = 3;
 
     GameObject[] m_imagesList;
@@ -46,5 +45,6 @@ public class CycleThroughImages : MonoBehaviour {
             m_index = 0;
 
         m_imagesList[m_index].SetActive(true);
+
     }
 }
