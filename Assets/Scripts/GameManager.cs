@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] Text m_timerObject;
     [SerializeField] GameObject m_newHighScore;
     [SerializeField] GameObject m_menuAndPausePanel;
+    [SerializeField] GameObject m_introPanel;
 
     [SerializeField] SenseIfGamePieceIsCentered m_senseIfGamePieceIsCentered;
 
@@ -210,7 +211,9 @@ public class GameManager : MonoBehaviour {
         m_newHighScore.SetActive(false);
         m_timeElapsedText.text = "Look around and find me...";
         //m_timerObject.enabled = true;
-        m_menuAndPausePanel.SetActive(true);
+        m_introPanel.SetActive(true);
+        m_menuAndPausePanel.SetActive(false);
+        m_gameOverDisplay.SetActive(false);
 
         m_resetGamePiece.ReEnable();
     }
