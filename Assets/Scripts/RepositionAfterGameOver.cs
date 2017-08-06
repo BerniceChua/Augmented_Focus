@@ -74,7 +74,7 @@ public class RepositionAfterGameOver : MonoBehaviour {
         //m_gamePiece.transform.position.Set(m_whereCameraIsPointing.x, m_whereCameraIsPointing.y, m_whereCameraIsPointing.z);
         //m_gamePiece.transform.rotation = m_initialRotation;
 #else
-        //m_gamePiece.transform.position = new Vector3(Random.Range(-2.0f, 0.0f), Random.Range(-2.0f, 2.0f), m_radiusOfOrbit);
+        //m_gamePiece.transform.position = new Vector3(Random.Range(-2.0f, -1.0f), Random.Range(-2.0f, 2.0f), m_radiusOfOrbit);
         m_gamePiece.transform.position = new Vector3(-2.0f, 2.0f, m_radiusOfOrbit);
 #endif
         m_gamePiece.SetActive(true);
