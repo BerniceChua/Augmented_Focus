@@ -1023,7 +1023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &66
 GameObject:
   m_ObjectHideFlags: 0
@@ -12154,8 +12154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -17}
+  m_AnchoredPosition: {x: 0, y: -13}
+  m_SizeDelta: {x: 0, y: -41}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &210914474
 MonoBehaviour:
@@ -13783,7 +13783,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 386.5, y: -45.695328}
+  m_AnchoredPosition: {x: 386.5, y: -45.695312}
   m_SizeDelta: {x: 772, y: 72}
   m_Pivot: {x: 0.5, y: 0.5000002}
 --- !u!114 &355115208
@@ -14008,7 +14008,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -54}
+  m_AnchoredPosition: {x: 0, y: -53.999985}
   m_SizeDelta: {x: -1, y: 59}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &372776038
@@ -16897,7 +16897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -54}
+  m_AnchoredPosition: {x: 0, y: -53.999985}
   m_SizeDelta: {x: -1, y: 59}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &537522857
@@ -19927,7 +19927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5f554cd808e45644831271262c86b4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_timeToWait: 5
+  m_timeToWait: 20
 --- !u!222 &848017956
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21820,7 +21820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5f554cd808e45644831271262c86b4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_timeToWait: 5
+  m_timeToWait: 20
 --- !u!114 &1086163693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23778,7 +23778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -54}
+  m_AnchoredPosition: {x: 0, y: -53.999985}
   m_SizeDelta: {x: -1, y: 59}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1266641335
@@ -23908,8 +23908,8 @@ RectTransform:
   m_Father: {fileID: 2096755091}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.45689654}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -24785,7 +24785,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -54}
+  m_AnchoredPosition: {x: 0, y: -53.999985}
   m_SizeDelta: {x: -1, y: 59}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1393218636
@@ -25008,7 +25008,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 413.5, y: -221.5}
+  m_AnchoredPosition: {x: 413.5, y: -221.50002}
   m_SizeDelta: {x: 1090.5, y: 171}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1429805635
@@ -25160,7 +25160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.40774205}
   m_AnchorMax: {x: 1, y: 0.6053227}
-  m_AnchoredPosition: {x: 0, y: -38.000034}
+  m_AnchoredPosition: {x: 0, y: -38.00003}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1442181581
@@ -29040,7 +29040,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -54}
+  m_AnchoredPosition: {x: 0, y: -53.999985}
   m_SizeDelta: {x: -1, y: 59}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1810945837
@@ -29296,7 +29296,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1276047625}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.54310346
+  m_Size: 0.5017241
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
