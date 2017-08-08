@@ -207,6 +207,12 @@ public class GameManager : MonoBehaviour {
         //m_detectGameOver.enabled = false;
         m_timeElapsed.enabled = false;
         //m_timeElapsed.GetComponent<TimeElapsed>().enabled = false;
+        ResetTheUI();
+
+        m_resetGamePiece.ReEnable();
+    }
+
+    public void ResetTheUI() {
         m_gameOverDisplay.SetActive(false);
         m_newHighScore.SetActive(false);
         m_timeElapsedText.text = "Look around and find me...";
@@ -214,13 +220,7 @@ public class GameManager : MonoBehaviour {
         m_introPanel.SetActive(true);
         m_menuAndPausePanel.SetActive(false);
         m_gameOverDisplay.SetActive(false);
-
-        m_resetGamePiece.ReEnable();
     }
-
-
-
-
 
     public void QuitGame()
     {
