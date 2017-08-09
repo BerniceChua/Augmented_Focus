@@ -209,7 +209,7 @@ public class GameManager : MonoBehaviour {
         //m_timeElapsed.GetComponent<TimeElapsed>().enabled = false;
         ResetTheUI();
 
-        m_resetGamePiece.ReEnable();
+        //m_resetGamePiece.ReEnable();
     }
 
     public void ResetTheUI() {
