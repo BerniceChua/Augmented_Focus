@@ -11,6 +11,10 @@ public class Orbit : MonoBehaviour {
     [SerializeField] SenseIfGamePieceIsCentered m_foundGamePiece;
     [SerializeField] DetectIfGamePieceLeavesScreenView m_detectGameOver;
 
+    [SerializeField] TimeElapsed m_timeElapsed;
+    [SerializeField] float m_timeInterval = 10;
+    [SerializeField] float m_difficultyMultiplier;
+
     Vector3 m_screenPosition;
     //float m_previousGyroValue = 0;
     //float m_currentGyroValue = 0;
@@ -24,6 +28,10 @@ public class Orbit : MonoBehaviour {
     // Use this for initialization
     void Start() {
         m_screenPosition = m_camera.WorldToViewportPoint(this.transform.position);
+    }
+
+    private void OnEnable() {
+        m_difficultyMultiplier = 1;
     }
 
     // Update is called once per frame
@@ -45,7 +53,7 @@ public class Orbit : MonoBehaviour {
     }
 
     public IEnumerator Flight(Vector3 flightDirection) {
-        float flightSpeed = Random.Range(0.1f, 4.5f);
+        float flightSpeed = Random.Range(0.1f, 4.5f) * DifficultyMultiplier();
 
         transform.RotateAround(m_camera.transform.position, flightDirection, flightSpeed);
 
@@ -54,6 +62,14 @@ public class Orbit : MonoBehaviour {
         } else {
             yield return new WaitForSecondsRealtime(Random.Range(6, 360));
         }
+    }
+
+    float DifficultyMultiplier() {
+        if (m_timeElapsed.Timer() % m_timeInterval == 0) {
+            m_difficultyMultiplier += 1;
+        }
+
+        return m_difficultyMultiplier;
     }
 
 }
