@@ -1054,7 +1054,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &66
 GameObject:
   m_ObjectHideFlags: 0
@@ -5465,8 +5465,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000022888002, y: -13}
-  m_SizeDelta: {x: 773, y: 640}
+  m_AnchoredPosition: {x: 0.000022888002, y: 0.000030518}
+  m_SizeDelta: {x: 773, y: 653}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!224 &408
 RectTransform:
@@ -5883,7 +5883,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 417}
+  m_AnchoredPosition: {x: 0, y: 315}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &435
@@ -6336,6 +6336,9 @@ MonoBehaviour:
   m_camera: {fileID: 263}
   m_foundGamePiece: {fileID: 473}
   m_detectGameOver: {fileID: 511}
+  m_timeElapsed: {fileID: 0}
+  m_timeInterval: 10
+  m_difficultyMultiplier: 0
 --- !u!114 &472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6350,6 +6353,9 @@ MonoBehaviour:
   m_camera: {fileID: 0}
   m_foundGamePiece: {fileID: 0}
   m_detectGameOver: {fileID: 0}
+  m_timeElapsed: {fileID: 0}
+  m_timeInterval: 10
+  m_difficultyMultiplier: 0
 --- !u!114 &473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7630,14 +7636,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Bernice Anne W. Chua
+  m_Text: 'Programming, Game Design, UX/UI, Art Direction, Music
 
-    Programming, Game Design, UX/UI, art direction, music
+    Bernice Anne W. Chua
 
+
+    Hummingird Modelling & Animation
 
     Junnichi Suko
 
-    hummingird modelling & animation
+
+    Icon/Logo Design
+
+    Bernice Anne W. Chua
+
+    Joshua Hue
 
 
     To find out more, please visit:
@@ -7654,7 +7667,11 @@ MonoBehaviour:
 
     Kelley Au
 
-    Arianna Acevedo
+    Arianna Azevedo
+
+    Gary Wong
+
+    Audris Joan Kuang
 
 
     Closed Beta Testers / QA Testers / UI Consultants
@@ -7664,11 +7681,21 @@ MonoBehaviour:
     Andrew Peng
 
 
+    Extra Hardware Provided By
+
+    Diana Greer
+
+
     Game Dev Incubator & Early Stage Funding
 
     Anita Wong & John Chua
 
-    Lucy & Dwight McMillan'
+    Lucy & Dwight McMillan
+
+
+    Advisor
+
+    Ashwin Kumar'
 --- !u!114 &522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12241,7 +12268,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -13}
-  m_SizeDelta: {x: 0, y: -41}
+  m_SizeDelta: {x: 0, y: -13}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &210914474
 MonoBehaviour:
@@ -17718,7 +17745,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 780}
+  m_SizeDelta: {x: 0, y: 1115}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &623087033
 GameObject:
@@ -22110,7 +22137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 417}
+  m_AnchoredPosition: {x: 0, y: 315}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1101726211
@@ -24149,8 +24176,8 @@ RectTransform:
   m_Father: {fileID: 2096755091}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.6269231}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -24613,8 +24640,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -141.00003}
-  m_SizeDelta: {x: 773, y: 640}
+  m_AnchoredPosition: {x: 0, y: -151}
+  m_SizeDelta: {x: 773, y: 655}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1320040316
 MonoBehaviour:
@@ -24648,14 +24675,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Bernice Anne W. Chua
+  m_Text: 'Programming, Game Design, UX/UI, Art Direction, Music
 
-    Programming, Game Design, UX/UI, art direction, music
+    Bernice Anne W. Chua
 
+
+    Hummingird Modelling & Animation
 
     Junnichi Suko
 
-    hummingird modelling & animation
+
+    Icon/Logo Design
+
+    Bernice Anne W. Chua
+
+    Joshua Hue
 
 
     To find out more, please visit:
@@ -24672,7 +24706,11 @@ MonoBehaviour:
 
     Kelley Au
 
-    Arianna Acevedo
+    Arianna Azevedo
+
+    Gary Wong
+
+    Audris Joan Kuang
 
 
     Closed Beta Testers / QA Testers / UI Consultants
@@ -24682,11 +24720,21 @@ MonoBehaviour:
     Andrew Peng
 
 
+    Extra Hardware Provided By
+
+    Diana Greer
+
+
     Game Dev Incubator & Early Stage Funding
 
     Anita Wong & John Chua
 
-    Lucy & Dwight McMillan'
+    Lucy & Dwight McMillan
+
+
+    Advisor
+
+    Ashwin Kumar'
 --- !u!222 &1320040317
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29659,8 +29707,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.5, y: 12}
-  m_SizeDelta: {x: 72.5, y: -24}
+  m_AnchoredPosition: {x: 2.5, y: 0.25001}
+  m_SizeDelta: {x: 72, y: 0.49997}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1826425971
 MonoBehaviour:
@@ -29701,7 +29749,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1276047625}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.3730769
+  m_Size: 0.28609866
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
