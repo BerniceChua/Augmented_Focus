@@ -61,6 +61,9 @@ public class DisplayPhoneMovementInput : MonoBehaviour{
             //"\nm_previousSpeed = " + (Mathf.Round(Mathf.Abs(m_previousGyroValue) * 100)).ToString() +
             //"\nAccelerometer = " + Input.acceleration.ToString() +
             "\nm_gamePiece.GetComponent<Orbit>().enabled = " + m_gamePiece.GetComponent<Orbit>().enabled +
+            "\nm_orbit.m_difficultyMultiplier = " + m_orbit.m_difficultyMultiplier +
+            "\nm_orbit.m_timeInterval = " + m_orbit.m_timeInterval +
+            "\nm_orbit.m_flightSpeed = " + m_orbit.m_flightSpeed +
             "\nm_whereCameraIsPointing = " + m_whereCameraIsPointing +
             "\nDetectIfGamePieceLeavesScreenView is active? = " + (m_detectGameOver.enabled == true) +
             "\nSenseIfGamePieceIsCentered is active? = " + (m_centeredGameObj.enabled == true) +
