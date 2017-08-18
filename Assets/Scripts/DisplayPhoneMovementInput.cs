@@ -11,6 +11,8 @@ public class DisplayPhoneMovementInput : MonoBehaviour{
     [SerializeField] DetectIfGamePieceLeavesScreenView m_detectGameOver;
     [SerializeField] SenseIfGamePieceIsCentered m_centeredGameObj;
 
+    [SerializeField] TimeElapsed m_timeElapsed;
+
     Text m_text { get { return GetComponent<Text>(); } set { m_text = value; } }
 
     Vector3 m_lastPosition = Vector3.zero;
@@ -65,6 +67,9 @@ public class DisplayPhoneMovementInput : MonoBehaviour{
             "\nm_orbit.m_timeInterval = " + m_orbit.m_timeInterval +
             "\nm_orbit.m_flightSpeed = " + m_orbit.m_flightSpeed +
             "\nm_whereCameraIsPointing = " + m_whereCameraIsPointing +
+            //"\nm_timeElapsed.Timer() = " + m_timeElapsed.Timer() +
+            //"\nm_timeElapsed.m_RunningTime = " + m_timeElapsed.m_RunningTime +
+            "\nm_orbit.GetTime() = " + m_orbit.GetTime() +
             "\nDetectIfGamePieceLeavesScreenView is active? = " + (m_detectGameOver.enabled == true) +
             "\nSenseIfGamePieceIsCentered is active? = " + (m_centeredGameObj.enabled == true) +
             "\nm_gamePiece.transform.position = " + m_gamePiece.transform.position.ToString() +
