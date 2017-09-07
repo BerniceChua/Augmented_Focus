@@ -249,7 +249,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: How To Play
+  m_Text: Title Text
 --- !u!222 &222473686816867122
 CanvasRenderer:
   m_ObjectHideFlags: 1
