@@ -7,6 +7,8 @@ public class DetectIfGamePieceLeavesScreenView : MonoBehaviour {
 
     [SerializeField] Transform m_target;
 
+    [SerializeField] GameObject m_timeElapsedGameObject;
+
     [SerializeField] TimeElapsed m_timeElapsed;
 
     [SerializeField] GameObject m_initialMessageText;
@@ -26,6 +28,8 @@ public class DetectIfGamePieceLeavesScreenView : MonoBehaviour {
         m_viewPosition = m_camera.WorldToViewportPoint(m_target.position);
 
         m_initialMessageText.SetActive(false);
+
+        m_timeElapsedGameObject.SetActive(true);
         m_timeElapsed.enabled = true;
 
         if (m_viewPosition.x < 0.0f || m_viewPosition.x > 1.0f || m_viewPosition.y < 0.0f || m_viewPosition.y > 1.0f) {
