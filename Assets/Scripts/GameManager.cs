@@ -90,13 +90,13 @@ public class GameManager : MonoBehaviour {
             m_senseIfGamePieceIsCentered.ResetFoundGamePiece();
         }
 
-#if UNITY_EDITOR
-        if (Input.GetMouseButton(0))
-            StartTheGame();
-#else
-        if (Input.touchCount == 2)
-            StartTheGame();
-#endif
+//#if UNITY_EDITOR
+//        if (Input.GetMouseButton(0))
+//            StartTheGame();
+//#else
+//        if (Input.touchCount == 2)
+//            StartTheGame();
+//#endif
     }
 
     public void StartTheGame() {
