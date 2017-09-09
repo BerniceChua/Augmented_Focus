@@ -105,7 +105,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Next
 --- !u!114 &114935586563490326
 MonoBehaviour:
   m_ObjectHideFlags: 1
