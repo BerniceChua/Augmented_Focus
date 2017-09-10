@@ -53,8 +53,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4664556236583664}
   - component: {fileID: 20074774846583460}
-  - component: {fileID: 124555071977872666}
   - component: {fileID: 92017363358880696}
+  - component: {fileID: 124555071977872666}
   - component: {fileID: 81264521693164878}
   m_Layer: 0
   m_Name: Markerless-AR-Camera-MainCamera
