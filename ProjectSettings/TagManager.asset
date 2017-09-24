@@ -5,6 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - GameOver
+  - Mosquito
+  - TreeSap
+  - Pollen
+  - HummingbirdNectar
+  - ButterflyNectar
+  - BeeNectar
+  - Hummingbirds
+  - Bees
+  - Butterflies
+  - Dragonflies
+  - Ladybugs
   layers:
   - Default
   - TransparentFX

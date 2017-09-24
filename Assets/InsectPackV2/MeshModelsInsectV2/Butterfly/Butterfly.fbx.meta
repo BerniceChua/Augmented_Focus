@@ -1,0 +1,1290 @@
+fileFormatVersion: 2
+guid: 3782fcfcf6b7b3440a24bf341bcd6deb
+timeCreated: 1497851799
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Body
+    100002: //RootNode
+    100004: Butterfly
+    100006: ButterflySkeleton
+    100008: head
+    100010: head_end
+    100012: LegLeft1
+    100014: LegLeft10
+    100016: LegLeft11
+    100018: LegLeft12
+    100020: LegLeft12_end
+    100022: LegLeft2
+    100024: LegLeft3
+    100026: LegLeft4
+    100028: LegLeft4_end
+    100030: LegLeft5
+    100032: LegLeft6
+    100034: LegLeft7
+    100036: LegLeft8
+    100038: LegLeft8_end
+    100040: LegLeft9
+    100042: LegRight1
+    100044: LegRight10
+    100046: LegRight11
+    100048: LegRight12
+    100050: LegRight12_end
+    100052: LegRight2
+    100054: LegRight3
+    100056: LegRight4
+    100058: LegRight4_end
+    100060: LegRight5
+    100062: LegRight6
+    100064: LegRight7
+    100066: LegRight8
+    100068: LegRight8_end
+    100070: LegRight9
+    100072: tail
+    100074: tail_end
+    100076: WingLeft
+    100078: WingLeft_end
+    100080: WingRight
+    100082: WingRight_end
+    400000: Body
+    400002: //RootNode
+    400004: Butterfly
+    400006: ButterflySkeleton
+    400008: head
+    400010: head_end
+    400012: LegLeft1
+    400014: LegLeft10
+    400016: LegLeft11
+    400018: LegLeft12
+    400020: LegLeft12_end
+    400022: LegLeft2
+    400024: LegLeft3
+    400026: LegLeft4
+    400028: LegLeft4_end
+    400030: LegLeft5
+    400032: LegLeft6
+    400034: LegLeft7
+    400036: LegLeft8
+    400038: LegLeft8_end
+    400040: LegLeft9
+    400042: LegRight1
+    400044: LegRight10
+    400046: LegRight11
+    400048: LegRight12
+    400050: LegRight12_end
+    400052: LegRight2
+    400054: LegRight3
+    400056: LegRight4
+    400058: LegRight4_end
+    400060: LegRight5
+    400062: LegRight6
+    400064: LegRight7
+    400066: LegRight8
+    400068: LegRight8_end
+    400070: LegRight9
+    400072: tail
+    400074: tail_end
+    400076: WingLeft
+    400078: WingLeft_end
+    400080: WingRight
+    400082: WingRight_end
+    4300000: Butterfly
+    7400000: death
+    7400002: fly
+    7400004: flydeath
+    7400006: flyflower
+    7400008: flyhurt
+    7400010: hurt
+    7400012: idle
+    7400014: nectarflower
+    7400016: over flower
+    7400018: ButterflySkeleton|pose
+    7400020: walk
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Butterfly
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: death
+      takeName: ButterflySkeleton|death
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Butterfly
+        weight: 1
+      - path: ButterflySkeleton
+        weight: 1
+      - path: ButterflySkeleton/Body
+        weight: 1
+      - path: ButterflySkeleton/Body/head
+        weight: 1
+      - path: ButterflySkeleton/Body/head/head_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8/LegLeft8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12/LegLeft12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8/LegRight8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12/LegRight12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/tail
+        weight: 1
+      - path: ButterflySkeleton/Body/tail/tail_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft/WingLeft_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fly
+      takeName: ButterflySkeleton|fly
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Butterfly
+        weight: 1
+      - path: ButterflySkeleton
+        weight: 1
+      - path: ButterflySkeleton/Body
+        weight: 1
+      - path: ButterflySkeleton/Body/head
+        weight: 1
+      - path: ButterflySkeleton/Body/head/head_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8/LegLeft8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12/LegLeft12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8/LegRight8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12/LegRight12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/tail
+        weight: 1
+      - path: ButterflySkeleton/Body/tail/tail_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft/WingLeft_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: flydeath
+      takeName: ButterflySkeleton|flydeath
+      firstFrame: 0
+      lastFrame: 75
+      wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Butterfly
+        weight: 1
+      - path: ButterflySkeleton
+        weight: 1
+      - path: ButterflySkeleton/Body
+        weight: 1
+      - path: ButterflySkeleton/Body/head
+        weight: 1
+      - path: ButterflySkeleton/Body/head/head_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8/LegLeft8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12/LegLeft12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8/LegRight8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12/LegRight12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/tail
+        weight: 1
+      - path: ButterflySkeleton/Body/tail/tail_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft/WingLeft_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: flyflower
+      takeName: ButterflySkeleton|flyflower
+      firstFrame: 0
+      lastFrame: 63
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Butterfly
+        weight: 1
+      - path: ButterflySkeleton
+        weight: 1
+      - path: ButterflySkeleton/Body
+        weight: 1
+      - path: ButterflySkeleton/Body/head
+        weight: 1
+      - path: ButterflySkeleton/Body/head/head_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8/LegLeft8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12/LegLeft12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8/LegRight8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12/LegRight12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/tail
+        weight: 1
+      - path: ButterflySkeleton/Body/tail/tail_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft/WingLeft_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: flyhurt
+      takeName: ButterflySkeleton|flyhurt
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Butterfly
+        weight: 1
+      - path: ButterflySkeleton
+        weight: 1
+      - path: ButterflySkeleton/Body
+        weight: 1
+      - path: ButterflySkeleton/Body/head
+        weight: 1
+      - path: ButterflySkeleton/Body/head/head_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8/LegLeft8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12/LegLeft12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8/LegRight8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12/LegRight12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/tail
+        weight: 1
+      - path: ButterflySkeleton/Body/tail/tail_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft/WingLeft_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: hurt
+      takeName: ButterflySkeleton|hurt
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Butterfly
+        weight: 1
+      - path: ButterflySkeleton
+        weight: 1
+      - path: ButterflySkeleton/Body
+        weight: 1
+      - path: ButterflySkeleton/Body/head
+        weight: 1
+      - path: ButterflySkeleton/Body/head/head_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8/LegLeft8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12/LegLeft12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8/LegRight8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12/LegRight12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/tail
+        weight: 1
+      - path: ButterflySkeleton/Body/tail/tail_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft/WingLeft_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle
+      takeName: ButterflySkeleton|idle
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Butterfly
+        weight: 1
+      - path: ButterflySkeleton
+        weight: 1
+      - path: ButterflySkeleton/Body
+        weight: 1
+      - path: ButterflySkeleton/Body/head
+        weight: 1
+      - path: ButterflySkeleton/Body/head/head_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8/LegLeft8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12/LegLeft12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8/LegRight8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12/LegRight12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/tail
+        weight: 1
+      - path: ButterflySkeleton/Body/tail/tail_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft/WingLeft_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: nectarflower
+      takeName: ButterflySkeleton|nectarflower
+      firstFrame: 0
+      lastFrame: 61
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Butterfly
+        weight: 1
+      - path: ButterflySkeleton
+        weight: 1
+      - path: ButterflySkeleton/Body
+        weight: 1
+      - path: ButterflySkeleton/Body/head
+        weight: 1
+      - path: ButterflySkeleton/Body/head/head_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8/LegLeft8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12/LegLeft12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8/LegRight8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12/LegRight12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/tail
+        weight: 1
+      - path: ButterflySkeleton/Body/tail/tail_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft/WingLeft_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: over flower
+      takeName: ButterflySkeleton|over flower
+      firstFrame: 0
+      lastFrame: 63
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Butterfly
+        weight: 1
+      - path: ButterflySkeleton
+        weight: 1
+      - path: ButterflySkeleton/Body
+        weight: 1
+      - path: ButterflySkeleton/Body/head
+        weight: 1
+      - path: ButterflySkeleton/Body/head/head_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8/LegLeft8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12/LegLeft12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8/LegRight8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12/LegRight12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/tail
+        weight: 1
+      - path: ButterflySkeleton/Body/tail/tail_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft/WingLeft_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk
+      takeName: ButterflySkeleton|walk
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Butterfly
+        weight: 1
+      - path: ButterflySkeleton
+        weight: 1
+      - path: ButterflySkeleton/Body
+        weight: 1
+      - path: ButterflySkeleton/Body/head
+        weight: 1
+      - path: ButterflySkeleton/Body/head/head_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft5/LegLeft6/LegLeft7/LegLeft8/LegLeft8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegLeft9/LegLeft10/LegLeft11/LegLeft12/LegLeft12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight5/LegRight6/LegRight7/LegRight8/LegRight8_end
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12
+        weight: 1
+      - path: ButterflySkeleton/Body/LegRight9/LegRight10/LegRight11/LegRight12/LegRight12_end
+        weight: 1
+      - path: ButterflySkeleton/Body/tail
+        weight: 1
+      - path: ButterflySkeleton/Body/tail/tail_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft
+        weight: 1
+      - path: ButterflySkeleton/Body/WingLeft/WingLeft_end
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight
+        weight: 1
+      - path: ButterflySkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

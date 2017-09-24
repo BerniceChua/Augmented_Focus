@@ -1,0 +1,919 @@
+fileFormatVersion: 2
+guid: 50779ae2dc14ec142a2e1f131ae1ee74
+timeCreated: 1497850158
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Body
+    100002: Head
+    100004: Head_end
+    100006: //RootNode
+    100008: LadyBug
+    100010: LadyBugSkeleton
+    100012: LegLeft1
+    100014: LegLeft2
+    100016: LegLeft3
+    100018: LegLeft3_end
+    100020: LegLeft4
+    100022: LegLeft5
+    100024: LegLeft6
+    100026: LegLeft6_end
+    100028: LegLeft7
+    100030: LegLeft8
+    100032: LegLeft9
+    100034: LegLeft9_end
+    100036: LegRight1
+    100038: LegRight2
+    100040: LegRight3
+    100042: LegRight3_end
+    100044: LegRight4
+    100046: LegRight5
+    100048: LegRight6
+    100050: LegRight6_end
+    100052: LegRight7
+    100054: LegRight8
+    100056: LegRight9
+    100058: LegRight9_end
+    100060: shellLeft
+    100062: shellLeft_end
+    100064: shellRight
+    100066: shellRight_end
+    100068: Tail
+    100070: Tail_end
+    100072: wingLeft
+    100074: wingLeft_end
+    100076: WingRight
+    100078: WingRight_end
+    400000: Body
+    400002: Head
+    400004: Head_end
+    400006: //RootNode
+    400008: LadyBug
+    400010: LadyBugSkeleton
+    400012: LegLeft1
+    400014: LegLeft2
+    400016: LegLeft3
+    400018: LegLeft3_end
+    400020: LegLeft4
+    400022: LegLeft5
+    400024: LegLeft6
+    400026: LegLeft6_end
+    400028: LegLeft7
+    400030: LegLeft8
+    400032: LegLeft9
+    400034: LegLeft9_end
+    400036: LegRight1
+    400038: LegRight2
+    400040: LegRight3
+    400042: LegRight3_end
+    400044: LegRight4
+    400046: LegRight5
+    400048: LegRight6
+    400050: LegRight6_end
+    400052: LegRight7
+    400054: LegRight8
+    400056: LegRight9
+    400058: LegRight9_end
+    400060: shellLeft
+    400062: shellLeft_end
+    400064: shellRight
+    400066: shellRight_end
+    400068: Tail
+    400070: Tail_end
+    400072: wingLeft
+    400074: wingLeft_end
+    400076: WingRight
+    400078: WingRight_end
+    4300000: LadyBug
+    7400000: death
+    7400002: fly
+    7400004: flydeath
+    7400006: flyhurt
+    7400008: hurt
+    7400010: idle
+    7400012: walk
+    7400014: idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: LadyBug
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: death
+      takeName: LadyBugSkeleton|death
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: LadyBug
+        weight: 1
+      - path: LadyBugSkeleton
+        weight: 1
+      - path: LadyBugSkeleton/Body
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head/Head_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9/LegLeft9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9/LegRight9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft/shellLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight/shellRight_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail/Tail_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft/wingLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fly
+      takeName: LadyBugSkeleton|fly
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: LadyBug
+        weight: 1
+      - path: LadyBugSkeleton
+        weight: 1
+      - path: LadyBugSkeleton/Body
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head/Head_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9/LegLeft9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9/LegRight9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft/shellLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight/shellRight_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail/Tail_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft/wingLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: flydeath
+      takeName: LadyBugSkeleton|flydeath
+      firstFrame: 0
+      lastFrame: 52
+      wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: LadyBug
+        weight: 1
+      - path: LadyBugSkeleton
+        weight: 1
+      - path: LadyBugSkeleton/Body
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head/Head_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9/LegLeft9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9/LegRight9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft/shellLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight/shellRight_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail/Tail_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft/wingLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: flyhurt
+      takeName: LadyBugSkeleton|flyhurt
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: LadyBug
+        weight: 1
+      - path: LadyBugSkeleton
+        weight: 1
+      - path: LadyBugSkeleton/Body
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head/Head_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9/LegLeft9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9/LegRight9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft/shellLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight/shellRight_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail/Tail_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft/wingLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: hurt
+      takeName: LadyBugSkeleton|hurt
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: LadyBug
+        weight: 1
+      - path: LadyBugSkeleton
+        weight: 1
+      - path: LadyBugSkeleton/Body
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head/Head_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9/LegLeft9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9/LegRight9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft/shellLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight/shellRight_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail/Tail_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft/wingLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle
+      takeName: LadyBugSkeleton|idle
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: LadyBug
+        weight: 1
+      - path: LadyBugSkeleton
+        weight: 1
+      - path: LadyBugSkeleton/Body
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head/Head_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9/LegLeft9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9/LegRight9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft/shellLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight/shellRight_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail/Tail_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft/wingLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk
+      takeName: LadyBugSkeleton|walk
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: LadyBug
+        weight: 1
+      - path: LadyBugSkeleton
+        weight: 1
+      - path: LadyBugSkeleton/Body
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head
+        weight: 1
+      - path: LadyBugSkeleton/Body/Head/Head_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft1/LegLeft2/LegLeft3/LegLeft3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft4/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegLeft7/LegLeft8/LegLeft9/LegLeft9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight1/LegRight2/LegRight3/LegRight3_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight4/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9
+        weight: 1
+      - path: LadyBugSkeleton/Body/LegRight7/LegRight8/LegRight9/LegRight9_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellLeft/shellLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/shellRight/shellRight_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail
+        weight: 1
+      - path: LadyBugSkeleton/Body/Tail/Tail_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft
+        weight: 1
+      - path: LadyBugSkeleton/Body/wingLeft/wingLeft_end
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight
+        weight: 1
+      - path: LadyBugSkeleton/Body/WingRight/WingRight_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

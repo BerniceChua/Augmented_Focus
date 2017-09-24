@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 92017363358880696}
   - component: {fileID: 124555071977872666}
   - component: {fileID: 81264521693164878}
+  - component: {fileID: 114516637581967298}
   m_Layer: 0
   m_Name: Markerless-AR-Camera-MainCamera
   m_TagString: Untagged
@@ -190,6 +191,20 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114516637581967298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1769598709488580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60a834e5b8b9a9459022bf0086441ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gamePiece: {fileID: 0}
+  background: {fileID: 0}
+  fit: {fileID: 0}
 --- !u!124 &124555071977872666
 Behaviour:
   m_ObjectHideFlags: 1

@@ -15,6 +15,10 @@ public class LoadScenes : MonoBehaviour {
 
     }
 
+    public void Intro() {
+        SceneManager.LoadScene("Intro");
+    }
+
     public void ChallengeMode() {
         SceneManager.LoadScene("Augmented_Focus");
     }
