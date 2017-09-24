@@ -15,6 +15,10 @@ public class WingAnimationSpeed : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //GetComponent<Animation>().Play("walk");
+        //m_hummingbirdAnimator.speed = m_speed;
+    }
+
+    private void OnEnable() {
         m_hummingbirdAnimator.speed = m_speed;
     }
 }

@@ -63,6 +63,10 @@ public class RepositionAfterGameOver : MonoBehaviour {
 #else
         //m_gamePiece.transform.position = new Vector3(Random.Range(-2.0f, 0.0f), Random.Range(-2.0f, 2.0f), m_radiusOfOrbit);
         //m_gamePiece.transform.position = new Vector3(-2.0f, 2.0f, m_radiusOfOrbit);
+        //m_gamePiece.transform.position = m_sphereCoords.toCartesian + m_camera.transform.position;
+
+        m_sphereCoords = new SphericalCoordinates(m_gamePiece.transform, m_radiusOfOrbit, m_radiusOfOrbit, 0.0f, Mathf.PI*2.0f, 0.0f, Mathf.PI/3.0f);
+
         m_gamePiece.transform.position = m_sphereCoords.toCartesian + m_camera.transform.position;
 #endif
     }
@@ -75,7 +79,11 @@ public class RepositionAfterGameOver : MonoBehaviour {
         //m_gamePiece.transform.rotation = m_initialRotation;
 #else
         //m_gamePiece.transform.position = new Vector3(Random.Range(-2.0f, 0.0f), Random.Range(-2.0f, 2.0f), m_radiusOfOrbit);
-        m_gamePiece.transform.position = new Vector3(-2.0f, 2.0f, m_radiusOfOrbit);
+        //m_gamePiece.transform.position = new Vector3(-2.0f, 2.0f, m_radiusOfOrbit);
+
+        m_sphereCoords = new SphericalCoordinates(m_gamePiece.transform, m_radiusOfOrbit, m_radiusOfOrbit, 0.0f, Mathf.PI*2.0f, 0.0f, Mathf.PI/3.0f);
+
+        m_gamePiece.transform.position = m_sphereCoords.toCartesian + m_camera.transform.position;
 #endif
         m_gamePiece.SetActive(true);
         m_gamePiece.GetComponent<Orbit>().enabled = true;

@@ -26,8 +26,8 @@ public class CheckIfFirstTimePlaying : MonoBehaviour {
 	}
 
     public void AutoStartTheTutorial() {
-        if (m_introPanel.activeInHierarchy)
-            m_introPanel.SetActive(false);
+        //if (m_introPanel.activeInHierarchy)
+        //    m_introPanel.SetActive(false);
 
         m_instructionsPanel.SetActive(true);
     }
@@ -45,8 +45,8 @@ public class CheckIfFirstTimePlaying : MonoBehaviour {
     }
 
     public void StartMainGame() {
-        if (PlayerPrefs.GetInt(m_didGameRunBefore) == 0 && m_instructionsPanel.activeInHierarchy)
-            m_instructionsPanel.SetActive(false);
+        //if (PlayerPrefs.GetInt(m_didGameRunBefore) == 0 && m_instructionsPanel.activeInHierarchy)
+        //    m_instructionsPanel.SetActive(false);
 
         m_introPanel.SetActive(true);
     }

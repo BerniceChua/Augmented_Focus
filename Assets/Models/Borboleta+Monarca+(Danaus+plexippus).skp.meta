@@ -1,0 +1,281 @@
+fileFormatVersion: 2
+guid: cb6500941102c2b46ab90cb446cd9c09
+timeCreated: 1505367350
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f00000040000000410000004200000043000000440000004500000046000000470000004800000049000000
+  assetHash:
+    serializedVersion: 2
+    Hash: b4da945197bb92d1f85b52039ee72752
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 0.33141288, y: 0.73539674, z: -0.75670797}
+      lookAt: {x: -1967.6855, y: -2607.0864, z: 4132.0107}
+      up: {x: -0.21282639, y: 0.8688845, z: 0.44692805}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BUTT01
+    100004: BUTT02
+    100006: BUTT03
+    100008: BUTT04
+    100010: BUTT05
+    100012: BUTT06
+    100014: BUTT07
+    100016: BUTT08
+    100018: BUTT09
+    100020: BUTT10
+    100022: BUTT11
+    100024: BUTT15
+    100026: BUTT16
+    100028: BUTT17
+    100030: BUTT18
+    100032: BUTT19
+    100034: BUTT20
+    100036: BUTT21
+    100038: BUTT22
+    100040: BUTT23
+    100042: BUTT24
+    100044: BUTT25
+    100046: BUTT26
+    100048: BUTT27
+    100050: BUTT28
+    100052: BUTT29
+    100054: BUTT30
+    100056: BUTT31
+    100058: BUTT32
+    100060: BUTT33
+    100062: BUTT34
+    100064: BUTT35
+    100066: BUTT36
+    100068: BUTT37
+    100070: BUTT38
+    100072: BUTTMAIN
+    100074: skpF02B
+    400000: //RootNode
+    400002: BUTT01
+    400004: BUTT02
+    400006: BUTT03
+    400008: BUTT04
+    400010: BUTT05
+    400012: BUTT06
+    400014: BUTT07
+    400016: BUTT08
+    400018: BUTT09
+    400020: BUTT10
+    400022: BUTT11
+    400024: BUTT15
+    400026: BUTT16
+    400028: BUTT17
+    400030: BUTT18
+    400032: BUTT19
+    400034: BUTT20
+    400036: BUTT21
+    400038: BUTT22
+    400040: BUTT23
+    400042: BUTT24
+    400044: BUTT25
+    400046: BUTT26
+    400048: BUTT27
+    400050: BUTT28
+    400052: BUTT29
+    400054: BUTT30
+    400056: BUTT31
+    400058: BUTT32
+    400060: BUTT33
+    400062: BUTT34
+    400064: BUTT35
+    400066: BUTT36
+    400068: BUTT37
+    400070: BUTT38
+    400072: BUTTMAIN
+    400074: skpF02B
+    2300000: BUTT01
+    2300002: BUTT02
+    2300004: BUTT03
+    2300006: BUTT04
+    2300008: BUTT05
+    2300010: BUTT06
+    2300012: BUTT07
+    2300014: BUTT08
+    2300016: BUTT09
+    2300018: BUTT10
+    2300020: BUTT11
+    2300022: BUTT15
+    2300024: BUTT16
+    2300026: BUTT17
+    2300028: BUTT18
+    2300030: BUTT19
+    2300032: BUTT20
+    2300034: BUTT21
+    2300036: BUTT22
+    2300038: BUTT23
+    2300040: BUTT24
+    2300042: BUTT25
+    2300044: BUTT26
+    2300046: BUTT27
+    2300048: BUTT28
+    2300050: BUTT29
+    2300052: BUTT30
+    2300054: BUTT31
+    2300056: BUTT32
+    2300058: BUTT33
+    2300060: BUTT34
+    2300062: BUTT35
+    2300064: BUTT36
+    2300066: BUTT37
+    2300068: BUTT38
+    2300070: BUTTMAIN
+    3300000: BUTT01
+    3300002: BUTT02
+    3300004: BUTT03
+    3300006: BUTT04
+    3300008: BUTT05
+    3300010: BUTT06
+    3300012: BUTT07
+    3300014: BUTT08
+    3300016: BUTT09
+    3300018: BUTT10
+    3300020: BUTT11
+    3300022: BUTT15
+    3300024: BUTT16
+    3300026: BUTT17
+    3300028: BUTT18
+    3300030: BUTT19
+    3300032: BUTT20
+    3300034: BUTT21
+    3300036: BUTT22
+    3300038: BUTT23
+    3300040: BUTT24
+    3300042: BUTT25
+    3300044: BUTT26
+    3300046: BUTT27
+    3300048: BUTT28
+    3300050: BUTT29
+    3300052: BUTT30
+    3300054: BUTT31
+    3300056: BUTT32
+    3300058: BUTT33
+    3300060: BUTT34
+    3300062: BUTT35
+    3300064: BUTT36
+    3300066: BUTT37
+    3300068: BUTT38
+    3300070: BUTTMAIN
+    4300000: Mesh BUTTMAIN
+    4300002: Mesh BUTT02
+    4300004: Mesh BUTT21
+    4300006: Mesh BUTT23
+    4300008: Mesh BUTT22
+    4300010: Mesh BUTT20
+    4300012: Mesh BUTT35
+    4300014: Mesh BUTT29
+    4300016: Mesh BUTT30
+    4300018: Mesh BUTT28
+    4300020: Mesh BUTT03
+    4300022: Mesh BUTT16
+    4300024: Mesh BUTT15
+    4300026: Mesh BUTT18
+    4300028: Mesh BUTT17
+    4300030: Mesh BUTT25
+    4300032: Mesh BUTT24
+    4300034: Mesh BUTT26
+    4300036: Mesh BUTT27
+    4300038: Mesh BUTT32
+    4300040: Mesh BUTT34
+    4300042: Mesh BUTT33
+    4300044: Mesh BUTT31
+    4300046: Mesh BUTT38
+    4300048: Mesh BUTT37
+    4300050: Mesh BUTT19
+    4300052: Mesh BUTT36
+    4300054: Mesh BUTT05
+    4300056: Mesh BUTT01
+    4300058: Mesh BUTT04
+    4300060: Mesh BUTT10
+    4300062: Mesh BUTT11
+    4300064: Mesh BUTT06
+    4300066: Mesh BUTT07
+    4300068: Mesh BUTT08
+    4300070: Mesh BUTT09
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

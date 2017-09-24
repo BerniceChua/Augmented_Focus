@@ -1,0 +1,856 @@
+fileFormatVersion: 2
+guid: 2f1e821a2a178b44aa33ff4f51bb7f6e
+timeCreated: 1497850156
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: Dragonfly
+    100004: //RootNode
+    100006: DragonflySkeleton
+    100008: head
+    100010: head_end
+    100012: legLeft1
+    100014: LegLeft2
+    100016: LegLeft2_end
+    100018: LegLeft3
+    100020: LegLeft4
+    100022: LegLeft4_end
+    100024: LegLeft5
+    100026: LegLeft6
+    100028: LegLeft6_end
+    100030: legRight1
+    100032: LegRight2
+    100034: LegRight2_end
+    100036: LegRight3
+    100038: LegRight4
+    100040: LegRight4_end
+    100042: LegRight5
+    100044: LegRight6
+    100046: LegRight6_end
+    100048: tail1
+    100050: tail2
+    100052: tail3
+    100054: tail3_end
+    100056: wingLeft1
+    100058: wingLeft1_end
+    100060: WingLeft2
+    100062: WingLeft2_end
+    100064: WingRight1
+    100066: WingRight1_end
+    100068: WingRight2
+    100070: WingRight2_end
+    400000: body
+    400002: //RootNode
+    400004: Dragonfly
+    400006: DragonflySkeleton
+    400008: head
+    400010: head_end
+    400012: legLeft1
+    400014: LegLeft2
+    400016: LegLeft2_end
+    400018: LegLeft3
+    400020: LegLeft4
+    400022: LegLeft4_end
+    400024: LegLeft5
+    400026: LegLeft6
+    400028: LegLeft6_end
+    400030: legRight1
+    400032: LegRight2
+    400034: LegRight2_end
+    400036: LegRight3
+    400038: LegRight4
+    400040: LegRight4_end
+    400042: LegRight5
+    400044: LegRight6
+    400046: LegRight6_end
+    400048: tail1
+    400050: tail2
+    400052: tail3
+    400054: tail3_end
+    400056: wingLeft1
+    400058: wingLeft1_end
+    400060: WingLeft2
+    400062: WingLeft2_end
+    400064: WingRight1
+    400066: WingRight1_end
+    400068: WingRight2
+    400070: WingRight2_end
+    4300000: Dragonfly
+    7400000: death
+    7400002: fly
+    7400004: flydeath
+    7400006: flyhurt
+    7400008: hurt
+    7400010: idle
+    7400012: DragonflySkeleton|pose
+    7400014: walk
+    7400016: death
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Dragonfly
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: death
+      takeName: DragonflySkeleton|death
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragonfly
+        weight: 1
+      - path: DragonflySkeleton
+        weight: 1
+      - path: DragonflySkeleton/body
+        weight: 1
+      - path: DragonflySkeleton/body/head
+        weight: 1
+      - path: DragonflySkeleton/body/head/head_end
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2/LegLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2/LegRight2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: DragonflySkeleton/body/tail1
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3/tail3_end
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1/wingLeft1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2/WingLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1/WingRight1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2/WingRight2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fly
+      takeName: DragonflySkeleton|fly
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragonfly
+        weight: 1
+      - path: DragonflySkeleton
+        weight: 1
+      - path: DragonflySkeleton/body
+        weight: 1
+      - path: DragonflySkeleton/body/head
+        weight: 1
+      - path: DragonflySkeleton/body/head/head_end
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2/LegLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2/LegRight2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: DragonflySkeleton/body/tail1
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3/tail3_end
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1/wingLeft1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2/WingLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1/WingRight1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2/WingRight2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: flydeath
+      takeName: DragonflySkeleton|flydeath
+      firstFrame: 0
+      lastFrame: 55
+      wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragonfly
+        weight: 1
+      - path: DragonflySkeleton
+        weight: 1
+      - path: DragonflySkeleton/body
+        weight: 1
+      - path: DragonflySkeleton/body/head
+        weight: 1
+      - path: DragonflySkeleton/body/head/head_end
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2/LegLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2/LegRight2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: DragonflySkeleton/body/tail1
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3/tail3_end
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1/wingLeft1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2/WingLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1/WingRight1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2/WingRight2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: flyhurt
+      takeName: DragonflySkeleton|flyhurt
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragonfly
+        weight: 1
+      - path: DragonflySkeleton
+        weight: 1
+      - path: DragonflySkeleton/body
+        weight: 1
+      - path: DragonflySkeleton/body/head
+        weight: 1
+      - path: DragonflySkeleton/body/head/head_end
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2/LegLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2/LegRight2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: DragonflySkeleton/body/tail1
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3/tail3_end
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1/wingLeft1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2/WingLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1/WingRight1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2/WingRight2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: hurt
+      takeName: DragonflySkeleton|hurt
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragonfly
+        weight: 1
+      - path: DragonflySkeleton
+        weight: 1
+      - path: DragonflySkeleton/body
+        weight: 1
+      - path: DragonflySkeleton/body/head
+        weight: 1
+      - path: DragonflySkeleton/body/head/head_end
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2/LegLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2/LegRight2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: DragonflySkeleton/body/tail1
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3/tail3_end
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1/wingLeft1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2/WingLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1/WingRight1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2/WingRight2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle
+      takeName: DragonflySkeleton|idle
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragonfly
+        weight: 1
+      - path: DragonflySkeleton
+        weight: 1
+      - path: DragonflySkeleton/body
+        weight: 1
+      - path: DragonflySkeleton/body/head
+        weight: 1
+      - path: DragonflySkeleton/body/head/head_end
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2/LegLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2/LegRight2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: DragonflySkeleton/body/tail1
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3/tail3_end
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1/wingLeft1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2/WingLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1/WingRight1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2/WingRight2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk
+      takeName: DragonflySkeleton|walk
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragonfly
+        weight: 1
+      - path: DragonflySkeleton
+        weight: 1
+      - path: DragonflySkeleton/body
+        weight: 1
+      - path: DragonflySkeleton/body/head
+        weight: 1
+      - path: DragonflySkeleton/body/head/head_end
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/legLeft1/LegLeft2/LegLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft3/LegLeft4/LegLeft4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6
+        weight: 1
+      - path: DragonflySkeleton/body/LegLeft5/LegLeft6/LegLeft6_end
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2
+        weight: 1
+      - path: DragonflySkeleton/body/legRight1/LegRight2/LegRight2_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight3/LegRight4/LegRight4_end
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6
+        weight: 1
+      - path: DragonflySkeleton/body/LegRight5/LegRight6/LegRight6_end
+        weight: 1
+      - path: DragonflySkeleton/body/tail1
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3
+        weight: 1
+      - path: DragonflySkeleton/body/tail1/tail2/tail3/tail3_end
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1
+        weight: 1
+      - path: DragonflySkeleton/body/wingLeft1/wingLeft1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2
+        weight: 1
+      - path: DragonflySkeleton/body/WingLeft2/WingLeft2_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight1/WingRight1_end
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2
+        weight: 1
+      - path: DragonflySkeleton/body/WingRight2/WingRight2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

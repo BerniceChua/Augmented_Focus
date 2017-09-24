@@ -1,0 +1,573 @@
+fileFormatVersion: 2
+guid: 69350f7d13e04d848b1099b66219e21a
+timeCreated: 1497850159
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Body
+    100002: Cockroach
+    100004: //RootNode
+    100006: Head
+    100008: Head_end
+    100010: LeftLeg1
+    100012: LeftLeg10
+    100014: LeftLeg11
+    100016: LeftLeg12
+    100018: LeftLeg12_end
+    100020: LeftLeg2
+    100022: LeftLeg3
+    100024: LeftLeg4
+    100026: LeftLeg4_end
+    100028: LeftLeg5
+    100030: LeftLeg6
+    100032: LeftLeg7
+    100034: LeftLeg8
+    100036: LeftLeg8_end
+    100038: LeftLeg9
+    100040: RightLeg1
+    100042: RightLeg10
+    100044: RightLeg11
+    100046: RightLeg12
+    100048: RightLeg12_end
+    100050: RightLeg1_end
+    100052: RightLeg2
+    100054: RightLeg3
+    100056: RightLeg4
+    100058: RightLeg5
+    100060: RightLeg6
+    100062: RightLeg7
+    100064: RightLeg8
+    100066: RightLeg8_end
+    100068: RightLeg9
+    100070: SkeletonCockroach
+    100072: Tail
+    100074: Tail_end
+    400000: Body
+    400002: Cockroach
+    400004: //RootNode
+    400006: Head
+    400008: Head_end
+    400010: LeftLeg1
+    400012: LeftLeg10
+    400014: LeftLeg11
+    400016: LeftLeg12
+    400018: LeftLeg12_end
+    400020: LeftLeg2
+    400022: LeftLeg3
+    400024: LeftLeg4
+    400026: LeftLeg4_end
+    400028: LeftLeg5
+    400030: LeftLeg6
+    400032: LeftLeg7
+    400034: LeftLeg8
+    400036: LeftLeg8_end
+    400038: LeftLeg9
+    400040: RightLeg1
+    400042: RightLeg10
+    400044: RightLeg11
+    400046: RightLeg12
+    400048: RightLeg12_end
+    400050: RightLeg1_end
+    400052: RightLeg2
+    400054: RightLeg3
+    400056: RightLeg4
+    400058: RightLeg5
+    400060: RightLeg6
+    400062: RightLeg7
+    400064: RightLeg8
+    400066: RightLeg8_end
+    400068: RightLeg9
+    400070: SkeletonCockroach
+    400072: Tail
+    400074: Tail_end
+    4300000: Cockroach
+    7400000: death
+    7400002: hurt
+    7400004: idle
+    7400006: SkeletonCockroach|pose
+    7400008: run
+    7400010: Cockroach|run
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Cockroach
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: death
+      takeName: SkeletonCockroach|death
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cockroach
+        weight: 1
+      - path: SkeletonCockroach
+        weight: 1
+      - path: SkeletonCockroach/Body
+        weight: 1
+      - path: SkeletonCockroach/Body/Head
+        weight: 1
+      - path: SkeletonCockroach/Body/Head/Head_end
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2/LeftLeg3
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2/LeftLeg3/LeftLeg4
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2/LeftLeg3/LeftLeg4/LeftLeg4_end
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6/LeftLeg7
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6/LeftLeg7/LeftLeg8
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6/LeftLeg7/LeftLeg8/LeftLeg8_end
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10/LeftLeg11
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10/LeftLeg11/LeftLeg12
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10/LeftLeg11/LeftLeg12/LeftLeg12_end
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3/RightLeg2
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3/RightLeg2/RightLeg1
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3/RightLeg2/RightLeg1/RightLeg1_end
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6/RightLeg7
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6/RightLeg7/RightLeg8
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6/RightLeg7/RightLeg8/RightLeg8_end
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10/RightLeg11
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10/RightLeg11/RightLeg12
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10/RightLeg11/RightLeg12/RightLeg12_end
+        weight: 1
+      - path: SkeletonCockroach/Body/Tail
+        weight: 1
+      - path: SkeletonCockroach/Body/Tail/Tail_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: hurt
+      takeName: SkeletonCockroach|hurt
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cockroach
+        weight: 1
+      - path: SkeletonCockroach
+        weight: 1
+      - path: SkeletonCockroach/Body
+        weight: 1
+      - path: SkeletonCockroach/Body/Head
+        weight: 1
+      - path: SkeletonCockroach/Body/Head/Head_end
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2/LeftLeg3
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2/LeftLeg3/LeftLeg4
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2/LeftLeg3/LeftLeg4/LeftLeg4_end
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6/LeftLeg7
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6/LeftLeg7/LeftLeg8
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6/LeftLeg7/LeftLeg8/LeftLeg8_end
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10/LeftLeg11
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10/LeftLeg11/LeftLeg12
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10/LeftLeg11/LeftLeg12/LeftLeg12_end
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3/RightLeg2
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3/RightLeg2/RightLeg1
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3/RightLeg2/RightLeg1/RightLeg1_end
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6/RightLeg7
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6/RightLeg7/RightLeg8
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6/RightLeg7/RightLeg8/RightLeg8_end
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10/RightLeg11
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10/RightLeg11/RightLeg12
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10/RightLeg11/RightLeg12/RightLeg12_end
+        weight: 1
+      - path: SkeletonCockroach/Body/Tail
+        weight: 1
+      - path: SkeletonCockroach/Body/Tail/Tail_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle
+      takeName: SkeletonCockroach|idle
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cockroach
+        weight: 1
+      - path: SkeletonCockroach
+        weight: 1
+      - path: SkeletonCockroach/Body
+        weight: 1
+      - path: SkeletonCockroach/Body/Head
+        weight: 1
+      - path: SkeletonCockroach/Body/Head/Head_end
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2/LeftLeg3
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2/LeftLeg3/LeftLeg4
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2/LeftLeg3/LeftLeg4/LeftLeg4_end
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6/LeftLeg7
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6/LeftLeg7/LeftLeg8
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6/LeftLeg7/LeftLeg8/LeftLeg8_end
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10/LeftLeg11
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10/LeftLeg11/LeftLeg12
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10/LeftLeg11/LeftLeg12/LeftLeg12_end
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3/RightLeg2
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3/RightLeg2/RightLeg1
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3/RightLeg2/RightLeg1/RightLeg1_end
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6/RightLeg7
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6/RightLeg7/RightLeg8
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6/RightLeg7/RightLeg8/RightLeg8_end
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10/RightLeg11
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10/RightLeg11/RightLeg12
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10/RightLeg11/RightLeg12/RightLeg12_end
+        weight: 1
+      - path: SkeletonCockroach/Body/Tail
+        weight: 1
+      - path: SkeletonCockroach/Body/Tail/Tail_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: run
+      takeName: SkeletonCockroach|run
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cockroach
+        weight: 1
+      - path: SkeletonCockroach
+        weight: 1
+      - path: SkeletonCockroach/Body
+        weight: 1
+      - path: SkeletonCockroach/Body/Head
+        weight: 1
+      - path: SkeletonCockroach/Body/Head/Head_end
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2/LeftLeg3
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2/LeftLeg3/LeftLeg4
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg1/LeftLeg2/LeftLeg3/LeftLeg4/LeftLeg4_end
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6/LeftLeg7
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6/LeftLeg7/LeftLeg8
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg5/LeftLeg6/LeftLeg7/LeftLeg8/LeftLeg8_end
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10/LeftLeg11
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10/LeftLeg11/LeftLeg12
+        weight: 1
+      - path: SkeletonCockroach/Body/LeftLeg9/LeftLeg10/LeftLeg11/LeftLeg12/LeftLeg12_end
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3/RightLeg2
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3/RightLeg2/RightLeg1
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg4/RightLeg3/RightLeg2/RightLeg1/RightLeg1_end
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6/RightLeg7
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6/RightLeg7/RightLeg8
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg5/RightLeg6/RightLeg7/RightLeg8/RightLeg8_end
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10/RightLeg11
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10/RightLeg11/RightLeg12
+        weight: 1
+      - path: SkeletonCockroach/Body/RightLeg9/RightLeg10/RightLeg11/RightLeg12/RightLeg12_end
+        weight: 1
+      - path: SkeletonCockroach/Body/Tail
+        weight: 1
+      - path: SkeletonCockroach/Body/Tail/Tail_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

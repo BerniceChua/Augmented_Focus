@@ -1,0 +1,146 @@
+
+                                                   _INSECT PACK V2 LOW POLY_ 
+
+
+this pack contains 6 animated Insect:
+
+
+
+ Models Only Texture Atlas Format:
+
+1-Wasp/Animation 8-textureAtlas -Color-2 
+1-LadyBug/Animation 7- textureAtlas Color2
+1-Dragonfly/Animation 7-textureAtlas Color2
+1-Butterlfy/Animation 10 -textureAtlas Color2
+1-Fly/Animation 7-textureAtlas Color2
+1-Cockroach/Animation 4-textureAtlas Color 2
+
+
+
+TextureAtlas 2 Png
+1 Normal Map Include Png.
+
+
+
+
+Formats Models Only:
+fbx
+
+
+                                          ----       Unity3D Import   ------
+pack created unity 5
+ Version 5.4.1
+
+import package INSECT PACK V2 LOW POLY in the unity 5
+
+
+
+
+Prefab Models:
+All models are already ready for use in practical prefab already generated and ready for you you just place them in the scene.
+
+
+optimizations:
+
+1-Models Lowpoly saving on quantities of polygons
+2-Skeleton:
+Using a few bones but that guarantee a realistic movement necessary in order to ease the calculation.
+3-Animations
+Using short animations, big impact, Savings Calculation.
+4-TextureAtlas:
+Including homestyle considerable savings calculation.
+
+
+Ps important:
+it is possible that many models generally understood you present a notice in the console:
+ImportFBX Warnings:
+Can not import tangents and binormals, Because mesh.
+It frequently happens that Unity3D present this message because of particular exports and good to note that this does not mean that the model and compromise.
+proceed in this way:
+the item Model / Normals and Tangents.
+Normals:
+Calculate
+
+Smooting angle = 180
+
+Tangents
+Calculate Legacy
+
+Apply
+
+
+                                           _INSECT PACK V2 LOW POLY_ 
+
+
+Wasp Animation:
+
+Idle = 0-99
+walk = 0-19
+death = 0-37
+hurt = 0-19
+fly = 0-39
+fly death = 0-34
+fly hurt = 0-22
+attack hurt = 0-39
+
+
+LadyBug Animation:
+death = 0-34
+fly = 0-39
+flydeath = 0-52
+flyhurt = 0-19
+hurt = 0-19
+idle = 0-99
+walk = 0-39
+
+
+
+Dragonfly Animation
+idle = 0-30
+fly = 0-39
+flydeath = 0-55
+flyhurt = 0-19
+hurt = 0-19
+idle = 0-99
+walk = 0-22
+
+
+Butterlfy Animation
+
+death = 0-39
+fly = 0-39
+flydeath = 0-75
+flyflower = 0-63
+flyhurt = 0-16
+hurt  = 0-20
+idle = 0-99
+nectarflower = 0-61
+over flower = 0-63
+walk = 0-39
+
+Fly  Animation
+
+death = 0-42
+deathfly = 0-48
+eat = 0-60
+fly = 0-39
+hurt = 0-19
+idle = 0-175
+walk = 0-39
+
+
+
+
+Cockroach = 0-99
+death = 0-47
+idle  = 0-99
+run = 0-19
+hurt = 0-25
+
+
+
+
+
+
+
+This package is created by ElkanSoft

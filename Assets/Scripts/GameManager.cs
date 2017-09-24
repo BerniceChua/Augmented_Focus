@@ -11,6 +11,7 @@ using UnityEditor;
 
 public class GameManager : MonoBehaviour {
     [SerializeField] GameObject m_initialMessageText;
+    [SerializeField] GameObject m_timeElapsedGameObject;
     [SerializeField] TimeElapsed m_timeElapsed;
     //[SerializeField] GameObject m_splashScreen;
     [SerializeField] Text m_timeElapsedText;
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] Text m_timerObject;
     [SerializeField] GameObject m_newHighScore;
     [SerializeField] GameObject m_menuAndPausePanel;
+    [SerializeField] GameObject m_introPanel;
 
     [SerializeField] SenseIfGamePieceIsCentered m_senseIfGamePieceIsCentered;
 
@@ -37,7 +39,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] Animator m_gamePieceAnimator;
     [SerializeField] WingAnimationSpeed m_wingAnimationSpeed;
     //private int floorMask = LayerMask.GetMask("Floor");
-
+    
     bool m_gameOver = false;
 
     public static GameManager control;
@@ -51,12 +53,12 @@ public class GameManager : MonoBehaviour {
         m_volumePreferences.LoadVolumeSettings();
 
         // Makes sure that the animation is turned off in the beginning.
-        //m_gamePiece.GetComponentInChildren<Animator>().enabled = false;
-        //if (m_gamePieceAnimator.isActiveAndEnabled)
-        //    m_gamePieceAnimator.enabled = false;
-        
-        //if (m_wingAnimationSpeed.isActiveAndEnabled)
-        //    m_wingAnimationSpeed.enabled = false;
+        m_gamePiece.GetComponentInChildren<Animator>().enabled = false;
+        if (m_gamePieceAnimator.isActiveAndEnabled)
+            m_gamePieceAnimator.enabled = false;
+
+        if (m_wingAnimationSpeed.isActiveAndEnabled)
+            m_wingAnimationSpeed.enabled = false;
 
         // Makes sure that game piece is invisible in the beginning.
         m_gamePiece.SetActive(false);
@@ -88,23 +90,35 @@ public class GameManager : MonoBehaviour {
             m_senseIfGamePieceIsCentered.ResetFoundGamePiece();
         }
 
-#if UNITY_EDITOR
-        if (Input.GetMouseButton(0))
-            StartTheGame();
-#else
-        if (Input.touchCount == 2)
-            StartTheGame();
-#endif
+//#if UNITY_EDITOR
+//        if (Input.GetMouseButton(0))
+//            StartTheGame();
+//#else
+//        if (Input.touchCount == 2)
+//            StartTheGame();
+//#endif
     }
 
-    void StartTheGame() {
+    public void StartTheGame() {
         //m_splashScreen.gameObject.SetActive(false);
 
         //m_timeElapsed.gameObject.SetActive(true);
         //m_timeElapsed.Timer();
 
+        m_introPanel.SetActive(false);
+        m_gameHUD.SetActive(true);
+
         m_senseIfGamePieceIsCentered.enabled = true;
         m_initialMessageText.SetActive(true);
+
+        m_timeElapsedGameObject.SetActive(false);
+        m_timeElapsed.enabled = false;
+
+        m_timeElapsed.ResetTime();
+        m_resetGamePiece.ReEnable();
+        UnpauseGame();
+
+        m_orbit.ResetDifficultyMultiplier();
     }
 
     public void ResetGame() {
@@ -206,18 +220,20 @@ public class GameManager : MonoBehaviour {
         //m_detectGameOver.enabled = false;
         m_timeElapsed.enabled = false;
         //m_timeElapsed.GetComponent<TimeElapsed>().enabled = false;
+        ResetTheUI();
+
+        //m_resetGamePiece.ReEnable();
+    }
+
+    public void ResetTheUI() {
         m_gameOverDisplay.SetActive(false);
         m_newHighScore.SetActive(false);
         m_timeElapsedText.text = "Look around and find me...";
         //m_timerObject.enabled = true;
-        m_menuAndPausePanel.SetActive(true);
-
-        m_resetGamePiece.ReEnable();
+        m_introPanel.SetActive(true);
+        m_menuAndPausePanel.SetActive(false);
+        m_gameOverDisplay.SetActive(false);
     }
-
-
-
-
 
     public void QuitGame()
     {

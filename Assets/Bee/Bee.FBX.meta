@@ -1,0 +1,587 @@
+fileFormatVersion: 2
+guid: 2e02f66c66dd44a4c91b5eec30993f8d
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bee
+    100004: bee_abdomen-nub_bone
+    100006: bee_abdomen01_bone
+    100008: bee_abdomen01_controller
+    100010: bee_abdomen02_bone
+    100012: bee_abdomen02_controller
+    100014: bee_abdomen03_bone
+    100016: bee_abdomen03_controller
+    100018: bee_abdomen04_bone
+    100020: bee_abdomen04_controller
+    100022: bee_abdomen05_bone
+    100024: bee_abdomen05_controller
+    100026: bee_head-nub_bone
+    100028: bee_head_bone
+    100030: bee_head_controller
+    100032: bee_l_antenna-nub_bone
+    100034: bee_l_antenna01_bone
+    100036: bee_l_antenna01_controller
+    100038: bee_l_antenna02_bone
+    100040: bee_l_antenna02_controller
+    100042: bee_l_antenna03_bone
+    100044: bee_l_antenna03_controller
+    100046: bee_l_antenna04_bone
+    100048: bee_l_antenna04_controller
+    100050: bee_l_antenna05_bone
+    100052: bee_l_antenna05_controller
+    100054: bee_l_antenna06_bone
+    100056: bee_l_antenna06_controller
+    100058: bee_l_antenna07_bone
+    100060: bee_l_antenna07_controller
+    100062: bee_l_claw-nub_bone
+    100064: bee_l_claw_bone
+    100066: bee_l_coxa_bone
+    100068: bee_l_coxa_controller
+    100070: bee_l_femur_bone
+    100072: bee_l_hindclaw-nub_bone
+    100074: bee_l_hindclaw_bone
+    100076: bee_l_hindcoxa_bone
+    100078: bee_l_hindcoxa_controller
+    100080: bee_l_hindfemur_bone
+    100082: bee_l_hindtarsus_bone
+    100084: bee_l_hindtibia_bone
+    100086: bee_l_hindtoe_bone
+    100088: bee_l_midleclaw-nub_bone
+    100090: bee_l_midleclaw_bone
+    100092: bee_l_midlecoxa_bone
+    100094: bee_l_midlecoxa_controller
+    100096: bee_l_midlefemur_bone
+    100098: bee_l_midletarsus_bone
+    100100: bee_l_midletibia_bone
+    100102: bee_l_midletoe_bone
+    100104: bee_l_tarsus_bone
+    100106: bee_l_tibia_bone
+    100108: bee_l_toe_bone
+    100110: bee_l_wing-nub_bone
+    100112: bee_l_wing01_bone
+    100114: bee_l_wing01_controller
+    100116: bee_l_wing02_bone
+    100118: bee_l_wingRoll_bone
+    100120: bee_l_wingRoll_controller
+    100122: bee_Main_Controller
+    100124: bee_r_antenna-nub_bone
+    100126: bee_r_antenna01_bone
+    100128: bee_r_antenna01_controller
+    100130: bee_r_antenna02_bone
+    100132: bee_r_antenna02_controller
+    100134: bee_r_antenna03_bone
+    100136: bee_r_antenna03_controller
+    100138: bee_r_antenna04_bone
+    100140: bee_r_antenna04_controller
+    100142: bee_r_antenna05_bone
+    100144: bee_r_antenna05_controller
+    100146: bee_r_antenna06_bone
+    100148: bee_r_antenna06_controller
+    100150: bee_r_antenna07_bone
+    100152: bee_r_antenna07_controller
+    100154: bee_r_claw-nub_bone
+    100156: bee_r_claw_bone
+    100158: bee_r_claw_controller
+    100160: bee_r_claw_controller001
+    100162: bee_r_coxa_bone
+    100164: bee_r_coxa_controller
+    100166: bee_r_femur_bone
+    100168: bee_r_hindclaw-nub_bone
+    100170: bee_r_hindclaw_controller
+    100172: bee_r_hindclaw_controller 1
+    100174: bee_r_hindclaw_controller001
+    100176: bee_r_hindcoxa_bone
+    100178: bee_r_hindcoxa_controller
+    100180: bee_r_hindfemur_bone
+    100182: bee_r_hindleg_controller
+    100184: bee_r_hindleg_controller001
+    100186: bee_r_hindtarsus_bone
+    100188: bee_r_hindtarsus_controller
+    100190: bee_r_hindtarsus_controller001
+    100192: bee_r_hindtibia_bone
+    100194: bee_r_hindtoe_bone
+    100196: bee_r_leg_controller
+    100198: bee_r_leg_controller001
+    100200: bee_r_midleclaw-nub_bone
+    100202: bee_r_midleclaw_bone
+    100204: bee_r_midleclaw_controller
+    100206: bee_r_midleclaw_controller001
+    100208: bee_r_midlecoxa_bone
+    100210: bee_r_midlecoxa_controller
+    100212: bee_r_midlefemur_bone
+    100214: bee_r_midleleg_controller
+    100216: bee_r_midleleg_controller001
+    100218: bee_r_midletarsus_bone
+    100220: bee_r_midletarsus_controller
+    100222: bee_r_midletarsus_controller001
+    100224: bee_r_midletibia_bone
+    100226: bee_r_midletoe_bone
+    100228: bee_r_tarsus_bone
+    100230: bee_r_tarsus_controller
+    100232: bee_r_tarsus_controller001
+    100234: bee_r_tibia_bone
+    100236: bee_r_toe_bone
+    100238: bee_r_wing-nub_bone
+    100240: bee_r_wing01_bone
+    100242: bee_r_wing01_controller
+    100244: bee_r_wing02_bone
+    100246: bee_r_wingRoll_bone
+    100248: bee_r_wingRoll_controller
+    100250: bee_thorax_bone
+    100252: IK Chain001
+    100254: IK Chain002
+    100256: IK Chain003
+    100258: IK Chain004
+    100260: IK Chain005
+    100262: IK Chain006
+    100264: IK Chain007
+    100266: IK Chain008
+    100268: IK Chain009
+    100270: IK Chain010
+    100272: IK Chain011
+    100274: IK Chain012
+    400000: //RootNode
+    400002: Bee
+    400004: bee_abdomen-nub_bone
+    400006: bee_abdomen01_bone
+    400008: bee_abdomen01_controller
+    400010: bee_abdomen02_bone
+    400012: bee_abdomen02_controller
+    400014: bee_abdomen03_bone
+    400016: bee_abdomen03_controller
+    400018: bee_abdomen04_bone
+    400020: bee_abdomen04_controller
+    400022: bee_abdomen05_bone
+    400024: bee_abdomen05_controller
+    400026: bee_head-nub_bone
+    400028: bee_head_bone
+    400030: bee_head_controller
+    400032: bee_l_antenna-nub_bone
+    400034: bee_l_antenna01_bone
+    400036: bee_l_antenna01_controller
+    400038: bee_l_antenna02_bone
+    400040: bee_l_antenna02_controller
+    400042: bee_l_antenna03_bone
+    400044: bee_l_antenna03_controller
+    400046: bee_l_antenna04_bone
+    400048: bee_l_antenna04_controller
+    400050: bee_l_antenna05_bone
+    400052: bee_l_antenna05_controller
+    400054: bee_l_antenna06_bone
+    400056: bee_l_antenna06_controller
+    400058: bee_l_antenna07_bone
+    400060: bee_l_antenna07_controller
+    400062: bee_l_claw-nub_bone
+    400064: bee_l_claw_bone
+    400066: bee_l_coxa_bone
+    400068: bee_l_coxa_controller
+    400070: bee_l_femur_bone
+    400072: bee_l_hindclaw-nub_bone
+    400074: bee_l_hindclaw_bone
+    400076: bee_l_hindcoxa_bone
+    400078: bee_l_hindcoxa_controller
+    400080: bee_l_hindfemur_bone
+    400082: bee_l_hindtarsus_bone
+    400084: bee_l_hindtibia_bone
+    400086: bee_l_hindtoe_bone
+    400088: bee_l_midleclaw-nub_bone
+    400090: bee_l_midleclaw_bone
+    400092: bee_l_midlecoxa_bone
+    400094: bee_l_midlecoxa_controller
+    400096: bee_l_midlefemur_bone
+    400098: bee_l_midletarsus_bone
+    400100: bee_l_midletibia_bone
+    400102: bee_l_midletoe_bone
+    400104: bee_l_tarsus_bone
+    400106: bee_l_tibia_bone
+    400108: bee_l_toe_bone
+    400110: bee_l_wing-nub_bone
+    400112: bee_l_wing01_bone
+    400114: bee_l_wing01_controller
+    400116: bee_l_wing02_bone
+    400118: bee_l_wingRoll_bone
+    400120: bee_l_wingRoll_controller
+    400122: bee_Main_Controller
+    400124: bee_r_antenna-nub_bone
+    400126: bee_r_antenna01_bone
+    400128: bee_r_antenna01_controller
+    400130: bee_r_antenna02_bone
+    400132: bee_r_antenna02_controller
+    400134: bee_r_antenna03_bone
+    400136: bee_r_antenna03_controller
+    400138: bee_r_antenna04_bone
+    400140: bee_r_antenna04_controller
+    400142: bee_r_antenna05_bone
+    400144: bee_r_antenna05_controller
+    400146: bee_r_antenna06_bone
+    400148: bee_r_antenna06_controller
+    400150: bee_r_antenna07_bone
+    400152: bee_r_antenna07_controller
+    400154: bee_r_claw-nub_bone
+    400156: bee_r_claw_bone
+    400158: bee_r_claw_controller
+    400160: bee_r_claw_controller001
+    400162: bee_r_coxa_bone
+    400164: bee_r_coxa_controller
+    400166: bee_r_femur_bone
+    400168: bee_r_hindclaw-nub_bone
+    400170: bee_r_hindclaw_controller
+    400172: bee_r_hindclaw_controller 1
+    400174: bee_r_hindclaw_controller001
+    400176: bee_r_hindcoxa_bone
+    400178: bee_r_hindcoxa_controller
+    400180: bee_r_hindfemur_bone
+    400182: bee_r_hindleg_controller
+    400184: bee_r_hindleg_controller001
+    400186: bee_r_hindtarsus_bone
+    400188: bee_r_hindtarsus_controller
+    400190: bee_r_hindtarsus_controller001
+    400192: bee_r_hindtibia_bone
+    400194: bee_r_hindtoe_bone
+    400196: bee_r_leg_controller
+    400198: bee_r_leg_controller001
+    400200: bee_r_midleclaw-nub_bone
+    400202: bee_r_midleclaw_bone
+    400204: bee_r_midleclaw_controller
+    400206: bee_r_midleclaw_controller001
+    400208: bee_r_midlecoxa_bone
+    400210: bee_r_midlecoxa_controller
+    400212: bee_r_midlefemur_bone
+    400214: bee_r_midleleg_controller
+    400216: bee_r_midleleg_controller001
+    400218: bee_r_midletarsus_bone
+    400220: bee_r_midletarsus_controller
+    400222: bee_r_midletarsus_controller001
+    400224: bee_r_midletibia_bone
+    400226: bee_r_midletoe_bone
+    400228: bee_r_tarsus_bone
+    400230: bee_r_tarsus_controller
+    400232: bee_r_tarsus_controller001
+    400234: bee_r_tibia_bone
+    400236: bee_r_toe_bone
+    400238: bee_r_wing-nub_bone
+    400240: bee_r_wing01_bone
+    400242: bee_r_wing01_controller
+    400244: bee_r_wing02_bone
+    400246: bee_r_wingRoll_bone
+    400248: bee_r_wingRoll_controller
+    400250: bee_thorax_bone
+    400252: IK Chain001
+    400254: IK Chain002
+    400256: IK Chain003
+    400258: IK Chain004
+    400260: IK Chain005
+    400262: IK Chain006
+    400264: IK Chain007
+    400266: IK Chain008
+    400268: IK Chain009
+    400270: IK Chain010
+    400272: IK Chain011
+    400274: IK Chain012
+    4300000: Bee
+    7400000: bee_walk
+    7400002: bee_takeoff
+    7400004: bee_fly
+    7400006: bee_attack
+    7400008: bee_landing
+    7400010: bee_idle
+    7400012: bee_hit
+    7400014: bee_die
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Bee
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: bee_walk
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: bee_takeoff
+      takeName: Take 001
+      firstFrame: 24
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: bee_fly
+      takeName: Take 001
+      firstFrame: 72
+      lastFrame: 84
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: bee_attack
+      takeName: Take 001
+      firstFrame: 84
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: bee_landing
+      takeName: Take 001
+      firstFrame: 96
+      lastFrame: 132
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: bee_idle
+      takeName: Take 001
+      firstFrame: 133
+      lastFrame: 165
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: bee_hit
+      takeName: Take 001
+      firstFrame: 168
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: bee_die
+      takeName: Take 001
+      firstFrame: 200
+      lastFrame: 242
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
