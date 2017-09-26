@@ -41,7 +41,7 @@ public class Orbit : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        m_startingSpeed = m_minSpeed;
+        ResetDifficultyMultiplier();
 
         //m_screenPosition = m_camera.WorldToViewportPoint(this.transform.position);
 
@@ -68,7 +68,7 @@ public class Orbit : MonoBehaviour {
 
     // Update is called once per frame
     void FixedUpdate() {
-        Vector3 flightDirection = new Vector3(Random.Range(-360, 360), Random.Range(-360, 360), Random.Range(-360, 360));
+        Vector3 flightDirection = new Vector3(Random.Range(-180, 180), Random.Range(-360, 360), Random.Range(-360, 360));
 
         if (m_detectGameOver.enabled == false) {
             RandomizePositionAtBeginning(flightDirection);
@@ -125,7 +125,7 @@ public class Orbit : MonoBehaviour {
 
     public void ResetDifficultyMultiplier() {
         //m_difficultyMultiplier = m_startingSpeed;
-        m_startingSpeed = m_minSpeed;
+        m_flightSpeed = m_minSpeed;
         m_difficultyMultiplier = 0;
     }
 
