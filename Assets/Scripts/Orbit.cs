@@ -57,7 +57,7 @@ public class Orbit : MonoBehaviour {
         //    print(m_imagesArray[i]);
         //}
 
-        print("m_imagesArray.Length = " + m_imagesArray.Length);
+        //print("m_imagesArray.Length = " + m_imagesArray.Length);
     }
 
     // Use this for initialization
@@ -137,7 +137,7 @@ public class Orbit : MonoBehaviour {
                     //m_difficultyMultiplier += m_difficultyMultiplier;
                     print("m_difficultyMultiplier = " + m_difficultyMultiplier);
 
-                    StartCoroutine(AddSparkles());
+                    //StartCoroutine(AddSparkles());
 
                     //return m_difficultyMultiplier + m_startingSpeed;
                     return m_difficultyMultiplier++;
