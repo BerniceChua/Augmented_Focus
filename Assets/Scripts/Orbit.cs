@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Orbit : MonoBehaviour {
 
@@ -25,7 +26,15 @@ public class Orbit : MonoBehaviour {
 
     [SerializeField] GameObject m_gameOverDisplay;
 
+    [SerializeField] Animator m_animator;
+
+
     [HideInInspector] public float m_flightSpeed;
+
+    [SerializeField] GameObject m_imagesContainer;
+    private Transform m_imagesContainerTransform;
+    [SerializeField] GameObject[] m_imagesArray;
+    private int m_index;
 
     Vector3 m_screenPosition;
     //float m_previousGyroValue = 0;
@@ -38,6 +47,18 @@ public class Orbit : MonoBehaviour {
     //Vector3 m_rotationAxis;
 
     Vector3 flightDirection;
+
+    private void Awake() {
+        //m_imagesContainerTransform = m_imagesContainer.transform;
+        //m_imagesArray = new GameObject[transform.childCount];
+
+        //for (int i = 0; i < (m_imagesContainerTransform.childCount - 1); i++) {
+        //    m_imagesArray[i] = m_imagesContainer.transform.GetChild(i).gameObject;
+        //    print(m_imagesArray[i]);
+        //}
+
+        print("m_imagesArray.Length = " + m_imagesArray.Length);
+    }
 
     // Use this for initialization
     void Start() {
@@ -87,18 +108,20 @@ public class Orbit : MonoBehaviour {
     }
 
     public IEnumerator Flight(Vector3 flightDirection) {
-        m_flightSpeed = m_startingSpeed + Random.Range(0.0f, 0.9f) /*+ DifficultyMultiplier()*/;
+        m_flightSpeed = m_startingSpeed + Random.Range(0.0f, 0.9f) + DifficultyMultiplier();
         //Debug.Log("m_flightSpeed = " + m_flightSpeed);
 
         //transform.RotateAround(m_camera.transform.position, flightDirection, m_flightSpeed);
         //transform.RotateAround(m_camera.transform.position, new Vector3(1.0f, 1.0f, 0.0f), 4.0f);
-        transform.RotateAround(m_camera.transform.position, new Vector3(1.0f, 1.0f, 0.0f), Mathf.Clamp(m_flightSpeed, m_minSpeed, m_maxSpeed));
+        transform.RotateAround(m_camera.transform.position, flightDirection, Mathf.Clamp(m_flightSpeed, m_minSpeed, m_maxSpeed));
 
         if (m_flightSpeed < 2.5f) {
             yield return new WaitForSecondsRealtime(Random.Range(0, 3));
         } else {
             yield return new WaitForSecondsRealtime(Random.Range(6, 360));
         }
+
+        m_animator.SetTrigger("ChangeDirectionsAnim");
     }
 
     public float GetTime() {
@@ -112,6 +135,9 @@ public class Orbit : MonoBehaviour {
                 if ( Mathf.Floor(GetTime()) % m_timeInterval == 0) {
                     //Debug.Log("Mathf.Floor(GetTime()) = " + Mathf.Floor(GetTime()));
                     //m_difficultyMultiplier += m_difficultyMultiplier;
+                    print("m_difficultyMultiplier = " + m_difficultyMultiplier);
+
+                    StartCoroutine(AddSparkles());
 
                     //return m_difficultyMultiplier + m_startingSpeed;
                     return m_difficultyMultiplier++;
@@ -121,6 +147,15 @@ public class Orbit : MonoBehaviour {
 
         Debug.Log("m_difficultyMultiplier = " + m_difficultyMultiplier);
         return m_difficultyMultiplier;
+    }
+
+    IEnumerator AddSparkles() {
+        print("Inside 'AddSparkles()' IEnumerator.");
+        m_index = Random.Range(0, m_imagesArray.Length - 1);
+
+        m_imagesArray[m_index].SetActive(true);
+        yield return new WaitForSecondsRealtime(3);
+        m_imagesArray[m_index].SetActive(false);
     }
 
     public void ResetDifficultyMultiplier() {
