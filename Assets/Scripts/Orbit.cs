@@ -108,7 +108,7 @@ public class Orbit : MonoBehaviour {
     }
 
     public IEnumerator Flight(Vector3 flightDirection) {
-        m_flightSpeed = m_startingSpeed + Random.Range(0.0f, 0.9f) + DifficultyMultiplier();
+        m_flightSpeed = m_startingSpeed + Random.Range(0.0f, 0.9f) + DifficultyMultiplier() * Time.deltaTime;
         //Debug.Log("m_flightSpeed = " + m_flightSpeed);
 
         //transform.RotateAround(m_camera.transform.position, flightDirection, m_flightSpeed);
@@ -154,7 +154,7 @@ public class Orbit : MonoBehaviour {
         m_index = Random.Range(0, m_imagesArray.Length - 1);
 
         m_imagesArray[m_index].SetActive(true);
-        yield return new WaitForSecondsRealtime(3);
+        yield return new WaitForSecondsRealtime(5);
         m_imagesArray[m_index].SetActive(false);
     }
 
