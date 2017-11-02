@@ -89,7 +89,8 @@ public class TimeElapsed : MonoBehaviour {
         string minutes = ((int)unformattedTime / 60).ToString("00");
         //string seconds = ((int) t % 60).ToString("00");
         //string seconds = string.Format("{0:00.00}", (t % 60).ToString("00"));
-        string seconds = (unformattedTime % 60).AddOneLeadingZero();
+        //string seconds = (unformattedTime % 60).AddOneLeadingZero();
+        string seconds = ((int)unformattedTime % 60).ToString("00");
 
         return hours + ":" + minutes + ":" + seconds;
     }

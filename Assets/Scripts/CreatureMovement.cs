@@ -28,6 +28,8 @@ public class CreatureMovement : MonoBehaviour {
 
     string stringMosquito = "Mosquito";
 
+    bool m_noFood = true;
+
     // Use this for initialization
     void Start() {
         m_angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
@@ -72,8 +74,6 @@ public class CreatureMovement : MonoBehaviour {
     void FixedUpdate() {
         Vector3 movePosition = transform.position;
 
-        DoNotGoTooFar();
-
         if (DetectFood() != null) {
             print("INSIDE 'if (DetectFood() != null)' ++");
 
@@ -81,11 +81,17 @@ public class CreatureMovement : MonoBehaviour {
             movePosition.z = Mathf.MoveTowards(transform.position.z, DetectFood().gameObject.transform.position.z, m_speed * Time.deltaTime);
             movePosition.x = Mathf.MoveTowards(transform.position.x, DetectFood().gameObject.transform.position.x, m_speed * Time.deltaTime);
 
-            transform.Translate(Vector3.forward * Random.Range(0.0f, 3.0f) * Time.deltaTime);
-        }
-        GetComponent<Rigidbody>().MovePosition(movePosition);
+            transform.Translate(Vector3.forward * Random.Range(0.0f, 1.0f) * Time.deltaTime);
+            GetComponent<Rigidbody>().MovePosition(movePosition);
 
-        transform.Translate(Vector3.forward * Random.Range(0.0f, 3.0f) * Time.deltaTime);
+            StartCoroutine(Eat());
+            //OnCollisionStay(collision);
+        } else {
+            DoNotGoTooFar();
+
+            transform.Translate(Vector3.forward * Random.Range(0.0f, 2.0f) * Time.deltaTime);
+        }
+
     }
 
     IEnumerator Move() {
@@ -102,10 +108,10 @@ public class CreatureMovement : MonoBehaviour {
 
         //DoNotGoTooFar();
 
-        while (true) {
+        while (m_noFood) {
             yield return new WaitForSeconds(3.5f);
             //transform.eulerAngles += new Vector3(0, 180f, 0);
-            transform.eulerAngles += new Vector3(Random.Range(-180.0f, 180.0f), Random.Range(-180.0f, 180.0f), Random.Range(-180.0f, 180.0f));
+            transform.eulerAngles += new Vector3(Random.Range(-90.0f, 90.0f), Random.Range(-90.0f, 90.0f), Random.Range(-90.0f, 90.0f));
         }
     }
 
@@ -169,7 +175,15 @@ public class CreatureMovement : MonoBehaviour {
             m_time = 0.0f;
         }
 
-        transform.localPosition = new Vector3(transform.localPosition.x + x, transform.localPosition.y, transform.localPosition.z + z);
+        if (m_time > 1.0f) {
+            x = Random.Range(-m_maxSpeed, m_maxSpeed);
+            z = Random.Range(-m_maxSpeed, m_maxSpeed);
+            m_angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
+            transform.localRotation = Quaternion.Euler(0, m_angle, 0);
+            m_time = 0.0f;
+        }
+
+        transform.localPosition = new Vector3(transform.localPosition.x + x, transform.localPosition.y + y, transform.localPosition.z + z);
     }
 
     void ChangeDirectionTo() {
@@ -189,12 +203,16 @@ public class CreatureMovement : MonoBehaviour {
     IEnumerator Eat() {
         //animation = GetComponent<Animation>();
 
-        m_animator.Play("Attack");
         //DetectFood().gameObject.SetActive(false);
         //yield return new WaitForSeconds(animation.clip.length);
         yield return new WaitForSeconds(3);
-        Destroy(DetectFood().gameObject);
-        yield return new WaitForSeconds(2);
+        Debug.Log("I am eating the food!");
+        m_animator.Play("Attack");
+        m_noFood = false;
+        Debug.Log("I ate the food!");
+        yield return new WaitForSeconds(5);
+        Destroy(DetectFood());
+        m_noFood = true;
     }
 
 }
