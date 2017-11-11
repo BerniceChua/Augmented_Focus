@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114668644911636372}
   - component: {fileID: 114367772450758886}
   - component: {fileID: 114849422410710328}
+  - component: {fileID: 114477334502186892}
   m_Layer: 8
   m_Name: TakeScreenshotButton
   m_TagString: Untagged
@@ -99,6 +100,20 @@ MonoBehaviour:
         m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114477334502186892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1505171943671936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.4044118, g: 0.4044118, b: 0.4044118, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!114 &114668644911636372
 MonoBehaviour:
   m_ObjectHideFlags: 1
