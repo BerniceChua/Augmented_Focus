@@ -12,14 +12,14 @@ public class TakeScreenshots : MonoBehaviour {
     Texture2D m_screenshotTexture;
 
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Start() {
+
+    }
+
+    // Update is called once per frame
+    void Update() {
+
+    }
 
     public IEnumerator TakeSnapshot() {
         yield return new WaitForEndOfFrame();
@@ -27,6 +27,19 @@ public class TakeScreenshots : MonoBehaviour {
         string screenshotName = "SumusunodScreenshot" + System.DateTime.Now.ToString("yyyyMMdd-HHmmss") + ".png";
 
 #if UNITY_EDITOR
+        ScreenshotEditorVersion(screenshotName);
+#else
+        ScreenshotAndroidVersion(screenshotName);
+#endif
+    }
+
+    IEnumerator ConfirmScreenshot(string path) {
+
+        yield return new WaitForSeconds(1.5f);
+        m_confirmationPanel.SetActive(true);
+    }
+
+    void ScreenshotEditorVersion(string screenshotName) {
         m_defaultPath = "../Augmented_Focus_screenshots/" + screenshotName;
 
         /// This doesn't work on Android, only here for testing/debugging:
@@ -36,7 +49,9 @@ public class TakeScreenshots : MonoBehaviour {
             WWW loadedImage = new WWW("file://" + m_defaultPath);
             StartCoroutine(ConfirmScreenshot(m_defaultPath));
         }
-#else
+    }
+
+    void ScreenshotAndroidVersion(string screenshotName) {
         //m_defaultPath = System.IO.Path.Combine(Application.persistentDataPath, "/Sumusunod/SumusunodScreenshot" + System.DateTime.Now.ToString("yyyyMMddHHmmss") + ".png");
         //m_defaultPath = System.IO.Path.Combine(Application.persistentDataPath, "/Sumusunod/" + screenshotName);
         /// Trying to use a custom directory like above doesn't work; that's why I just used the default.
@@ -47,8 +62,10 @@ public class TakeScreenshots : MonoBehaviour {
 
         /// ENSURE THAT FOLDER LOCATION EXISTS
         if (!System.IO.Directory.Exists(myFolderLocation)) {
-             System.IO.Directory.CreateDirectory(myFolderLocation);
+                System.IO.Directory.CreateDirectory(myFolderLocation);
         }
+
+        //Application.CaptureScreenshot(m_defaultPath);
 
         /// This works on Android:
         /// These next 2 lines take the screenshot:
@@ -59,7 +76,6 @@ public class TakeScreenshots : MonoBehaviour {
         /// These next 2 lines save the screenshot:
         byte[] numberOfBytes = m_screenshotTexture.EncodeToPNG();
         File.WriteAllBytes(m_defaultPath, numberOfBytes);
-        Application.CaptureScreenshot(m_defaultPath);
 
         /// MOVE THE SCREENSHOT WHERE WE WANT IT TO BE STORED
         System.IO.File.Move(m_defaultPath, myScreenshotLocation);
@@ -82,15 +98,5 @@ public class TakeScreenshots : MonoBehaviour {
             WWW loadedImage = new WWW("file://" + myScreenshotLocation);
             StartCoroutine(ConfirmScreenshot(myScreenshotLocation));
         }
-#endif
-
-
     }
-
-    IEnumerator ConfirmScreenshot(string path) {
-
-        yield return new WaitForSeconds(1.5f);
-        m_confirmationPanel.SetActive(true);
-    }
-
 }
