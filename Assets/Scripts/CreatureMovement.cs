@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class CreatureMovement : MonoBehaviour {
 
+    //[SerializeField] float m_mouthPositionX = 4.66f;
+    //[SerializeField] float m_mouthPositionX = 0.0f;
+    //[SerializeField] float m_mouthPositionY = -0.16f;
+    //[SerializeField] float m_mouthPositionZ = 0.75f;
+
     [SerializeField] Animator m_animator;
     //[SerializeField] Animation animation;
 
@@ -72,17 +77,18 @@ public class CreatureMovement : MonoBehaviour {
     //}
 
     void FixedUpdate() {
-        Vector3 movePosition = transform.position;
+        //Vector3 targetPosition = transform.position + new Vector3(m_mouthPositionX, m_mouthPositionY, m_mouthPositionZ);
+        Vector3 targetPosition = transform.position;
 
         if (DetectFood() != null) {
             print("INSIDE 'if (DetectFood() != null)' ++");
 
-            movePosition.y = Mathf.MoveTowards(transform.position.y, DetectFood().gameObject.transform.position.y, m_speed * Time.deltaTime);
-            movePosition.z = Mathf.MoveTowards(transform.position.z, DetectFood().gameObject.transform.position.z, m_speed * Time.deltaTime);
-            movePosition.x = Mathf.MoveTowards(transform.position.x, DetectFood().gameObject.transform.position.x, m_speed * Time.deltaTime);
+            targetPosition.y = Mathf.MoveTowards(transform.position.y, DetectFood().gameObject.transform.position.y, m_speed * Time.deltaTime);
+            targetPosition.z = Mathf.MoveTowards(transform.position.z, DetectFood().gameObject.transform.position.z, m_speed * Time.deltaTime);
+            targetPosition.x = Mathf.MoveTowards(transform.position.x, DetectFood().gameObject.transform.position.x, m_speed * Time.deltaTime);
 
             transform.Translate(Vector3.forward * Random.Range(0.0f, 1.0f) * Time.deltaTime);
-            GetComponent<Rigidbody>().MovePosition(movePosition);
+            GetComponent<Rigidbody>().MovePosition(targetPosition);
 
             StartCoroutine(Eat());
             //OnCollisionStay(collision);
