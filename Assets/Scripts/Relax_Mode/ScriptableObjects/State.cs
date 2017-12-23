@@ -5,16 +5,6 @@ using UnityEngine;
 [CreateAssetMenu (menuName = "PluggableAI/State")]
 public class State : ScriptableObject {
 
-    //// Use this for initialization
-    //void Start () {
-
-    //}
-
-    //// Update is called once per frame
-    //void Update () {
-
-    //}
-
     public Action[] m_actionsArray;
 
     /// <summary>
