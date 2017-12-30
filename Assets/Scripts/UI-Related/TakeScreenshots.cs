@@ -74,8 +74,9 @@ public class TakeScreenshots : MonoBehaviour {
         m_screenshotTexture.Apply();
 
         /// These next 2 lines save the screenshot:
-        byte[] numberOfBytes = m_screenshotTexture.EncodeToPNG();
-        File.WriteAllBytes(m_defaultPath, numberOfBytes);
+        //byte[] numberOfBytes = m_screenshotTexture.EncodeToPNG();
+        //File.WriteAllBytes(m_defaultPath, numberOfBytes);
+        Application.CaptureScreenshot(screenshotName);
 
         /// MOVE THE SCREENSHOT WHERE WE WANT IT TO BE STORED
         System.IO.File.Move(m_defaultPath, myScreenshotLocation);
