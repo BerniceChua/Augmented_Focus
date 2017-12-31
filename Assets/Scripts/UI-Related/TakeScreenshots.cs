@@ -21,9 +21,9 @@ public class TakeScreenshots : MonoBehaviour {
 
     }
 
-    public IEnumerator TakeSnapshot() {
-        yield return new WaitForEndOfFrame();
-
+    public void TakeSnapshot() {
+        new WaitForEndOfFrame();
+        
         string screenshotName = "SumusunodScreenshot" + System.DateTime.Now.ToString("yyyyMMdd-HHmmss") + ".png";
 
 #if UNITY_EDITOR
