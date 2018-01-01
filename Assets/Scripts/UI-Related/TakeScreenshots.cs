@@ -46,6 +46,7 @@ public class TakeScreenshots : MonoBehaviour {
         Application.CaptureScreenshot(m_defaultPath);
 
         if (File.Exists(m_defaultPath)) {
+            Debug.Log("inside 'if (File.Exists(m_defaultPath))'.");
             WWW loadedImage = new WWW("file://" + m_defaultPath);
             StartCoroutine(ConfirmScreenshot(m_defaultPath));
         }
@@ -56,8 +57,9 @@ public class TakeScreenshots : MonoBehaviour {
         //m_defaultPath = System.IO.Path.Combine(Application.persistentDataPath, "/Sumusunod/" + screenshotName);
         /// Trying to use a custom directory like above doesn't work; that's why I just used the default.
         m_defaultPath = System.IO.Path.Combine(Application.persistentDataPath, screenshotName);
-        
-        string myFolderLocation = "/mnt/sdcard/Pictures/Screenshots/Sumusunod";
+
+        //string myFolderLocation = "/mnt/sdcard/Pictures/Screenshots/Sumusunod";
+        string myFolderLocation = "/storage/sdcard0/Pictures/Screenshots/Sumusunod";
         string myScreenshotLocation = myFolderLocation + screenshotName;
 
         /// ENSURE THAT FOLDER LOCATION EXISTS
@@ -76,7 +78,8 @@ public class TakeScreenshots : MonoBehaviour {
         /// These next 2 lines save the screenshot:
         //byte[] numberOfBytes = m_screenshotTexture.EncodeToPNG();
         //File.WriteAllBytes(m_defaultPath, numberOfBytes);
-        Application.CaptureScreenshot(screenshotName);
+        //Application.CaptureScreenshot(screenshotName);
+        Application.CaptureScreenshot(m_defaultPath);
 
         /// MOVE THE SCREENSHOT WHERE WE WANT IT TO BE STORED
         System.IO.File.Move(m_defaultPath, myScreenshotLocation);
