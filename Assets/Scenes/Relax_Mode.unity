@@ -1026,6 +1026,12 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114178326689619784, guid: 611975b91bab0304fab980ba0127eb9b,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2d5e81e2028c2bc46ab0322f9e0b136a,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 611975b91bab0304fab980ba0127eb9b, type: 2}
   m_IsPrefabParent: 0
@@ -6627,23 +6633,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92eafe33fe8727429cedefb51ba4216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_animator: {fileID: 0}
-  m_speed: 0
-  m_maxSpeed: 0
-  xMax: 0
-  xMin: 0
-  yMax: 0
-  yMin: 0
-  zMax: 0
-  zMin: 0
-  x: 0
-  y: 0
-  z: 0
-  m_time: 0
-  m_angle: 0
-  m_mosquito: {fileID: 0}
-  stringMosquito: 4d6f73717569746f
-  m_noFood: 1
 --- !u!1 &1062746606
 GameObject:
   m_ObjectHideFlags: 0
@@ -7322,7 +7311,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15820
+  m_Name: pb_Mesh37922
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -7475,23 +7464,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92eafe33fe8727429cedefb51ba4216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_animator: {fileID: 0}
-  m_speed: 0
-  m_maxSpeed: 0
-  xMax: 0
-  xMin: 0
-  yMax: 0
-  yMin: 0
-  zMax: 0
-  zMin: 0
-  x: 0
-  y: 0
-  z: 0
-  m_time: 0
-  m_angle: 0
-  m_mosquito: {fileID: 0}
-  stringMosquito: 4d6f73717569746f
-  m_noFood: 1
 --- !u!23 &1219296168
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7846,23 +7818,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92eafe33fe8727429cedefb51ba4216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_animator: {fileID: 1347358969}
-  m_speed: 0.8
-  m_maxSpeed: 0.8
-  xMax: 2.5
-  xMin: -2.5
-  yMax: 2.5
-  yMin: -2.5
-  zMax: 2.5
-  zMin: -2.5
-  x: 0
-  y: 0
-  z: 0
-  m_time: 0
-  m_angle: 0
-  m_mosquito: {fileID: 0}
-  stringMosquito: 4d6f73717569746f
-  m_noFood: 1
 --- !u!135 &1347358968
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14383,23 +14338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92eafe33fe8727429cedefb51ba4216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_animator: {fileID: 0}
-  m_speed: 4
-  m_maxSpeed: 1.5
-  xMax: 2.5
-  xMin: -2.5
-  yMax: 2.5
-  yMin: -2.5
-  zMax: 2.5
-  zMin: -2.5
-  x: 0
-  y: 0
-  z: 0
-  m_time: 0
-  m_angle: 0
-  m_mosquito: {fileID: 0}
-  stringMosquito: 4d6f73717569746f
-  m_noFood: 1
 --- !u!135 &2113702870
 SphereCollider:
   m_ObjectHideFlags: 0
