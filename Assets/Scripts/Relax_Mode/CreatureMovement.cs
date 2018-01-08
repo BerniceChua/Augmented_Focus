@@ -41,7 +41,7 @@ public class CreatureMovement : MonoBehaviour {
 
         m_mosquito = GameObject.FindGameObjectWithTag(stringMosquito);
 
-        StartCoroutine("Move");
+        //StartCoroutine("Move");
 
     }
 
@@ -95,7 +95,7 @@ public class CreatureMovement : MonoBehaviour {
         } else {
             DoNotGoTooFar();
 
-            transform.Translate(Vector3.forward * Random.Range(0.0f, 2.0f) * Time.deltaTime);
+            //transform.Translate(Vector3.forward * Random.Range(0.0f, 2.0f) * Time.deltaTime);
         }
 
     }
@@ -139,6 +139,8 @@ public class CreatureMovement : MonoBehaviour {
     }
 
     void DoNotGoTooFar() {
+        m_time += Time.deltaTime;
+
         if (transform.localPosition.x > xMax) {
             x = Random.Range(-m_maxSpeed, 0.0f);
             m_angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
@@ -183,6 +185,7 @@ public class CreatureMovement : MonoBehaviour {
 
         if (m_time > 1.0f) {
             x = Random.Range(-m_maxSpeed, m_maxSpeed);
+            y = Random.Range(-m_maxSpeed, m_maxSpeed);
             z = Random.Range(-m_maxSpeed, m_maxSpeed);
             m_angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
             transform.localRotation = Quaternion.Euler(0, m_angle, 0);
@@ -190,6 +193,10 @@ public class CreatureMovement : MonoBehaviour {
         }
 
         transform.localPosition = new Vector3(transform.localPosition.x + x, transform.localPosition.y + y, transform.localPosition.z + z);
+        Debug.Log("transform.localPosition = " + transform.localPosition);
+        Debug.Log(x);
+        Debug.Log(y);
+        Debug.Log(z);
     }
 
     void ChangeDirectionTo() {
