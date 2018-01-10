@@ -1529,7 +1529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 127
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &373214068
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2891,7 +2891,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 373214067}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 2
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -3455,7 +3455,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-450830
+  m_Name: pb_Mesh15220
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -7311,7 +7311,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh37922
+  m_Name: pb_Mesh15830
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -7781,10 +7781,9 @@ GameObject:
   - component: {fileID: 1347358969}
   - component: {fileID: 1347358968}
   - component: {fileID: 1347358975}
-  - component: {fileID: 1347358967}
   - component: {fileID: 1347358974}
-  - component: {fileID: 1347358966}
   - component: {fileID: 1347358973}
+  - component: {fileID: 1347358967}
   m_Layer: 9
   m_Name: Hummingbird
   m_TagString: Player
@@ -7792,7 +7791,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1347358966
+--- !u!114 &1347358967
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -7800,24 +7799,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1347358965}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 703eb3626176f1d49a8c88b3b5b5c40f, type: 3}
+  m_Script: {fileID: 11500000, guid: 54ebf5691b141864aba6b91ea4ca46cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_sensorLength: 0.05
-  m_speed: 4
-  m_turnSpeed: 50
---- !u!114 &1347358967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114798153211789828, guid: 0c45129317528644296ce8c360b1d52d,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1347358965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a92eafe33fe8727429cedefb51ba4216, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  velocidadMax: 1
+  xMax: 1.5
+  zMax: 1.5
+  xMin: -1.5
+  zMin: -1.5
 --- !u!135 &1347358968
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7873,7 +7862,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1347358965}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.01975782
   m_Height: 0.10030076
@@ -7905,7 +7894,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1347358965}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03613d64e1c210e47841adcf4bc6d2ad, type: 3}
   m_Name: 
@@ -7925,7 +7914,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1347358965}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1b12a0f85d06a84fb46c36adccb652e, type: 3}
   m_Name: 

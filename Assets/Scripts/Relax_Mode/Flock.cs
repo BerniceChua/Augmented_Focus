@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Flock : MonoBehaviour {
-    [SerializeField] public float m_speed = 0.001f;
+    [SerializeField] public float m_MinSpeed = 0.05f;
+    [SerializeField] public float m_MaxSpeed = 2.0f;
 
+    public float m_speed;
     float m_rotationSpeed = 4.0f;
     Vector3 m_averageHeading;
     Vector3 m_averagePosition;
@@ -14,7 +16,7 @@ public class Flock : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        m_speed = Random.Range(0.5f, 1.0f);
+        m_speed = Random.Range(m_MinSpeed, m_MaxSpeed);
     }
 
     // Update is called once per frame
