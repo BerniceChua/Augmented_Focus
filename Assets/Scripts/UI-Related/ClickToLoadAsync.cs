@@ -11,13 +11,18 @@ public class ClickToLoadAsync : MonoBehaviour {
 
     private AsyncOperation m_async;
 
-    public void ClickAsync(Scene sceneToLoad) {
+    /// <summary>
+    /// This has to be int, because Scene doesn't work in the UI.)s
+    /// </summary>
+    /// <param name="levelOfSceneToLoad"></param>
+    public void ClickAsync(int levelOfSceneToLoad) {
         m_LoadingImage.SetActive(true);
-        StartCoroutine( LoadLevelWithProgressBar(sceneToLoad) );
+        StartCoroutine( LoadLevelWithProgressBar(levelOfSceneToLoad) );
     }
 
-    IEnumerator LoadLevelWithProgressBar(Scene sceneToLoad) {
-        m_async = SceneManager.LoadSceneAsync(sceneToLoad.name.ToString());
+    IEnumerator LoadLevelWithProgressBar(int levelOfSceneToLoad) {
+        //m_async = SceneManager.LoadSceneAsync(sceneToLoad.name.ToString());
+        m_async = SceneManager.LoadSceneAsync(levelOfSceneToLoad);
 
         while (!m_async.isDone) {
             m_LoadingBar.value = m_async.progress;
