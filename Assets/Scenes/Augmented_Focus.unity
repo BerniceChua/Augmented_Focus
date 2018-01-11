@@ -4331,7 +4331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 120.16667, y: -112.49999}
+  m_AnchoredPosition: {x: 120.16667, y: -112.5}
   m_SizeDelta: {x: 150, y: 65}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &385
@@ -4423,7 +4423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 360.5, y: -112.49999}
+  m_AnchoredPosition: {x: 360.5, y: -112.5}
   m_SizeDelta: {x: 150, y: 65}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &390
@@ -4594,7 +4594,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 625.8334, y: -112.49999}
+  m_AnchoredPosition: {x: 625.8334, y: -112.5}
   m_SizeDelta: {x: 200, y: 65}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &408
@@ -13198,8 +13198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20f45314358442340aba5c969b0a3f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_instructionsPanel: {fileID: 0}
-  m_introPanel: {fileID: 0}
 --- !u!1 &521742603
 GameObject:
   m_ObjectHideFlags: 0
@@ -15395,6 +15393,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1532460327}
+    - target: {fileID: 114359361503966298, guid: d6931b592aed1e24c9921f8e32eeb3e5,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetFlagThatFirstPlayWasComplete
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6931b592aed1e24c9921f8e32eeb3e5, type: 2}
   m_IsPrefabParent: 0
@@ -23345,7 +23348,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1532460323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20f45314358442340aba5c969b0a3f6b, type: 3}
+  m_Script: {fileID: 11500000, guid: ea67c43c379366c4aada131db737d817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_instructionsPanel: {fileID: 25}
