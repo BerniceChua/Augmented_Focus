@@ -12,7 +12,7 @@ public class ClickToLoadAsync : MonoBehaviour {
     private AsyncOperation m_async;
 
     /// <summary>
-    /// This has to be int, because Scene doesn't work in the UI.)s
+    /// This has to be int, because Scene doesn't work in the UI.)
     /// </summary>
     /// <param name="levelOfSceneToLoad"></param>
     public void ClickAsync(int levelOfSceneToLoad) {
