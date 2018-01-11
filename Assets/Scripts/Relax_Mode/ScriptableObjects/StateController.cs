@@ -27,7 +27,7 @@ public class StateController : MonoBehaviour {
     /// <summary>
     /// This variable was added after creating LookDecision.cs
     /// </summary>
-    [HideInInspector] public Transform chaseTarget;
+    [HideInInspector] public Transform m_FoodTarget;
 
     /// <summary>
     /// This variable was added after creating CheckIfCountdownElapsed(float duration) function
@@ -37,39 +37,58 @@ public class StateController : MonoBehaviour {
     private bool aiActive;
 
 
-	void Awake () 
+    [SerializeField] public Animator m_animator;
+    bool m_noFood = true;
+    string stringMosquito = "Mosquito";
+
+
+    public float m_sensorLength = 0.05f;
+
+
+    void Awake () 
 	{
 		//tankShooting = GetComponent<Complete.TankShooting> ();
-		navMeshAgent = GetComponent<NavMeshAgent> ();
+		//navMeshAgent = GetComponent<NavMeshAgent> ();
 	}
 
-	public void SetupAI(bool aiActivationFromTankManager, List<Transform> wayPointsFromTankManager)
-	{
-		wayPointList = wayPointsFromTankManager;
-		aiActive = aiActivationFromTankManager;
-		if (aiActive) 
-		{
-			navMeshAgent.enabled = true;
-		} else 
-		{
-			navMeshAgent.enabled = false;
-		}
-	}
+	//public void SetupAI(bool aiActivationFromTankManager, List<Transform> wayPointsFromTankManager)
+	//{
+	//	wayPointList = wayPointsFromTankManager;
+	//	aiActive = aiActivationFromTankManager;
+	//	if (aiActive) 
+	//	{
+	//		navMeshAgent.enabled = true;
+	//	} else 
+	//	{
+	//		navMeshAgent.enabled = false;
+	//	}
+	//}
 
     private void Update() {
-        if (!aiActive)
-            return;
+        //if (!aiActive)
+        //    return;
 
         /// if AI is active, call this and pass `this`, which is the reference to the state controller.
         m_currentState.UpdateState(this);
     }
 
     private void OnDrawGizmos() {
+        // forward sensor
+        Gizmos.DrawRay(transform.position, transform.forward * (m_sensorLength));
+
+        // backward sensor
+        Gizmos.DrawRay(transform.position, -transform.forward * (m_sensorLength));
+
+
+        Gizmos.DrawRay(transform.position, transform.right * (m_sensorLength));
+        Gizmos.DrawRay(transform.position, -transform.right * (m_sensorLength));
+
         if (m_currentState != null && eyes != null) {
             Gizmos.color = m_currentState.sceneGizmoColor;
-            Gizmos.DrawWireSphere(eyes.position, creatureStats.lookSphereCastRadius);
+            //Gizmos.DrawWireSphere(eyes.position, creatureStats.lookSphereCastRadius);
         }
     }
+
 
     /// <summary>
     /// Added after creating CheckTransitions(StateController controller) in State.cs.
@@ -97,6 +116,44 @@ public class StateController : MonoBehaviour {
     /// resets the timer from CheckIfCountdownElapsed(float duration)
     private void OnExitState() {
         stateTimeElapsed = 0;
+    }
+
+
+    //GameObject DetectFood() {
+    //    GameObject[] foods;
+    //    foods = GameObject.FindGameObjectsWithTag(stringMosquito);
+    //    GameObject closest = null;
+    //    float distance = Mathf.Infinity;
+    //    Vector3 position = transform.position;
+    //    foreach (GameObject food in foods) {
+    //        Vector3 diff = food.transform.position - position;
+    //        float curDistance = diff.sqrMagnitude;
+    //        if (curDistance < distance) {
+    //            closest = food;
+    //            distance = curDistance;
+    //        }
+    //    }
+    //    return closest;
+    //}
+
+    public GameObject DetectFood() {
+        Debug.Log("FoodInTheScene.GetNearestInList() = " + FoodInTheScene.GetNearestInList());
+        return FoodInTheScene.GetNearestInList();
+    }
+
+    public IEnumerator Eat() {
+        //animation = GetComponent<Animation>();
+
+        //DetectFood().gameObject.SetActive(false);
+        //yield return new WaitForSeconds(animation.clip.length);
+        yield return new WaitForSeconds(3);
+        Debug.Log("I am eating the food!");
+        m_animator.Play("Attack");
+        m_noFood = false;
+        Debug.Log("I ate the food!");
+        yield return new WaitForSeconds(5);
+        Destroy(DetectFood());
+        m_noFood = true;
     }
 
 }

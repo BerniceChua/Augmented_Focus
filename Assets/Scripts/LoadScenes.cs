@@ -19,12 +19,15 @@ public class LoadScenes : MonoBehaviour {
         SceneManager.LoadScene("Intro");
     }
 
-    public void ChallengeMode() {
+    public void RelaxMode() {
+        SceneManager.LoadScene("Relax_Mode");
+    }
+    public void FocusMode() {
         SceneManager.LoadScene("Augmented_Focus");
     }
 
-    public void RelaxMode() {
-        SceneManager.LoadScene("Relax_Mode");
+    public void ChallengeMode() {
+        SceneManager.LoadScene("Challenge_Mode");
     }
 
 }

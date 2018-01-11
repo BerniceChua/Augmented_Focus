@@ -13,12 +13,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Bool_keys:
   - pbCheckForProBuilderUpdates
+  - pbIconGUI
+  - pbDragSelectWholeElement
   m_Int_keys:
   - pbHandleAlignment
   - pbDefaultEditLevel
   - pbDefaultSelectionMode
   - pb_GIWorkflowMode
   - pbDragSelectMode
+  - pbVertexColorTool
   m_Float_keys:
   - pbEditorScroll.x
   - pbEditorScroll.y
@@ -26,11 +29,11 @@ MonoBehaviour:
   - pbLastWebVersionChecked
   m_Color_keys: []
   m_Material_keys: []
-  m_Bool_values: 01
-  m_Int_values: 0200000001000000020000000100000000000000
+  m_Bool_values: 010000
+  m_Int_values: 020000000000000001000000010000000000000000000000
   m_Float_values:
   - 0
-  - 29
+  - 0
   m_String_values:
   - 2.9.7f5
   m_Color_values: []

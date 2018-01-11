@@ -34,7 +34,7 @@ public class SpawnFood : MonoBehaviour {
         spawnedTarget = Instantiate(m_itemToSpawn, m_camera.transform.forward, m_camera.transform.rotation);
         spawnedTarget.name = (spawnedTarget.name + TargetCounterAddToName());
 
-        //TargetsAndArrayList.AddToArrayList(spawnedTarget);
+        FoodInTheScene.AddToFoodList(spawnedTarget);
     }
 
     public string TargetCounterAddToName() {

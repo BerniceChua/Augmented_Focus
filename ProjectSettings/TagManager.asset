@@ -16,6 +16,7 @@ TagManager:
   - Butterflies
   - Dragonflies
   - Ladybugs
+  - Boundary
   layers:
   - Default
   - TransparentFX
