@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 5c25b0c88eeffc84288ca0cf26e5b59a
   - enabled: 1
+    path: Assets/Scenes/Relax_Mode.unity
+    guid: 7820c19fa9e454641a49ee6a8c78e863
+  - enabled: 1
     path: Assets/Scenes/Augmented_Focus.unity
     guid: 391c5fd508c917e4a9017f8991499b72
   - enabled: 1
-    path: Assets/Scenes/Relax_Mode.unity
+    path: Assets/Scenes/Challenge_Mode.unity
     guid: 00000000000000000000000000000000
