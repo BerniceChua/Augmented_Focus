@@ -14,6 +14,19 @@ public class Flock : MonoBehaviour {
 
     bool turning = false;  // will become set to true when the NPCs reach the edge, so the NPCs will turn back.
 
+
+
+
+
+
+
+
+    [SerializeField] Animator m_animator;
+    string stringMosquito = "Mosquito";
+    bool m_noFood = true;
+
+
+
     // Use this for initialization
     void Start() {
         m_speed = Random.Range(m_MinSpeed, m_MaxSpeed);
@@ -21,26 +34,42 @@ public class Flock : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Vector3.Distance(transform.position, Vector3.zero) >= GlobalFlock.m_areaSize)
-            turning = true;
-        else
-            turning = false;
+        Vector3 targetPosition = transform.position;
+        if (DetectFood() != null) {
+            print("INSIDE 'if (DetectFood() != null)' ++");
 
-        if (turning) {
-            Vector3 thisDirection = Vector3.zero - transform.position;
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(thisDirection), m_rotationSpeed * Time.deltaTime);
+            targetPosition.y = Mathf.MoveTowards(transform.position.y, DetectFood().gameObject.transform.position.y, m_speed * Time.deltaTime);
+            targetPosition.z = Mathf.MoveTowards(transform.position.z, DetectFood().gameObject.transform.position.z, m_speed * Time.deltaTime);
+            targetPosition.x = Mathf.MoveTowards(transform.position.x, DetectFood().gameObject.transform.position.x, m_speed * Time.deltaTime);
 
-            m_speed = Random.Range(0.5f, 1.0f);
+            transform.Translate(Vector3.forward * Random.Range(0.0f, 1.0f) * Time.deltaTime);
+            GetComponent<Rigidbody>().MovePosition(targetPosition);
+
+            StartCoroutine(Eat());
+            //OnCollisionStay(collision);
         } else {
-            if (Random.Range(0, 10) < 1)
-                ApplyFlockingAlgorithm();
-        }
 
-        //transform.Translate(0, 0, ( Random.Range(0.5f, 5.0f) ) * Time.deltaTime );
-        transform.Translate(0, 0, m_speed * Time.deltaTime);
+            if (Vector3.Distance(transform.position, Vector3.zero) >= GlobalFlock.m_areaSize)
+                turning = true;
+            else
+                turning = false;
+
+            if (turning) {
+                Vector3 thisDirection = Vector3.zero - transform.position;
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(thisDirection), m_rotationSpeed * Time.deltaTime);
+
+                m_speed = Random.Range(0.5f, 1.0f);
+            } else {
+                if (Random.Range(0, 10) < 1)
+                    ApplyFlockingAlgorithm();
+            }
+
+            //transform.Translate(0, 0, ( Random.Range(0.5f, 5.0f) ) * Time.deltaTime );
+            transform.Translate(0, 0, m_speed * Time.deltaTime);
+        }
     }
 
-    void ApplyFlockingAlgorithm() {
+    public void ApplyFlockingAlgorithm() {
         // to apply all the rules, each NPC that this code is attached to needs to know about the other NPCs that this code is attached to.
         // that's why we used public static for m_allNpcs.
 
@@ -84,6 +113,43 @@ public class Flock : MonoBehaviour {
             if (direction != Vector3.zero)
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), m_rotationSpeed * Time.deltaTime);
         }
+    }
+
+
+
+
+
+
+    GameObject DetectFood() {
+        GameObject[] foods;
+        foods = GameObject.FindGameObjectsWithTag(stringMosquito);
+        GameObject closest = null;
+        float distance = Mathf.Infinity;
+        Vector3 position = transform.position;
+        foreach (GameObject food in foods) {
+            Vector3 diff = food.transform.position - position;
+            float curDistance = diff.sqrMagnitude;
+            if (curDistance < distance) {
+                closest = food;
+                distance = curDistance;
+            }
+        }
+        return closest;
+    }
+
+    IEnumerator Eat() {
+        //animation = GetComponent<Animation>();
+
+        //DetectFood().gameObject.SetActive(false);
+        //yield return new WaitForSeconds(animation.clip.length);
+        yield return new WaitForSeconds(3);
+        Debug.Log("I am eating the food!");
+        m_animator.Play("Attack");
+        m_noFood = false;
+        Debug.Log("I ate the food!");
+        yield return new WaitForSeconds(5);
+        Destroy(DetectFood());
+        m_noFood = true;
     }
 
 }

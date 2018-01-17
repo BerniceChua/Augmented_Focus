@@ -35,6 +35,8 @@ public class CreatureMovement : MonoBehaviour {
 
     bool m_noFood = true;
 
+    Flock m_flockingAlgorithm;
+
     // Use this for initialization
     void Start() {
         m_angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
@@ -43,6 +45,7 @@ public class CreatureMovement : MonoBehaviour {
 
         //StartCoroutine("Move");
 
+        m_flockingAlgorithm = this.GetComponent<Flock>();
     }
 
     // Update is called once per frame
@@ -93,9 +96,12 @@ public class CreatureMovement : MonoBehaviour {
             StartCoroutine(Eat());
             //OnCollisionStay(collision);
         } else {
-            DoNotGoTooFar();
+            //DoNotGoTooFar();
 
             //transform.Translate(Vector3.forward * Random.Range(0.0f, 2.0f) * Time.deltaTime);
+
+            m_flockingAlgorithm.ApplyFlockingAlgorithm();
+
         }
 
     }
