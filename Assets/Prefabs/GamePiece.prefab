@@ -960,8 +960,10 @@ GameObject:
   - component: {fileID: 54862425253531118}
   - component: {fileID: 95018887114085078}
   - component: {fileID: 135720100022992230}
-  - component: {fileID: 114798153211789828}
   - component: {fileID: 114377720755579382}
+  - component: {fileID: 114967837971804418}
+  - component: {fileID: 114543428957295716}
+  - component: {fileID: 114235545917007064}
   m_Layer: 9
   m_Name: GamePiece
   m_TagString: Player
@@ -2530,7 +2532,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.5449828, g: 0.77205884, b: 0.090830445, a: 1}
-  m_Intensity: 5
+  m_Intensity: 4
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2566,7 +2568,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.18804066, g: 0.44768012, b: 0.5441177, a: 1}
-  m_Intensity: 8
+  m_Intensity: 4
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2602,7 +2604,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 1
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2628,6 +2630,22 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114235545917007064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1798509287883412}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ebf5691b141864aba6b91ea4ca46cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadMax: 1
+  xMax: 1.5
+  zMax: 1.5
+  xMin: -1.5
+  zMin: -1.5
 --- !u!114 &114377720755579382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2639,15 +2657,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f2fe9587ed25f4b807c1cc3d27d2ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_currentState: {fileID: 0}
-  creatureStats: {fileID: 0}
+  m_currentState: {fileID: 11400000, guid: 24b0183302edaaa4aa4ba8ab9814f201, type: 2}
+  creatureStats: {fileID: 11400000, guid: d12cd8a2bd976714683b1e286a466633, type: 2}
   eyes: {fileID: 0}
-  m_remainState: {fileID: 0}
+  m_remainState: {fileID: 11400000, guid: deb25f306629abe44b70da0a3443cc4a, type: 2}
   navMeshAgent: {fileID: 0}
   wayPointList: []
   nextWaypoint: 0
-  chaseTarget: {fileID: 0}
+  m_FoodTarget: {fileID: 0}
   stateTimeElapsed: 0
+  m_animator: {fileID: 95018887114085078}
+  m_sensorLength: 0.4
 --- !u!114 &114400815545501618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2660,7 +2680,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_speed: 9999
---- !u!114 &114798153211789828
+--- !u!114 &114543428957295716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1798509287883412}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03613d64e1c210e47841adcf4bc6d2ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_animator: {fileID: 95018887114085078}
+  m_speed: 1
+  m_maxSpeed: 1
+  xMax: 2.5
+  xMin: -2.5
+  yMax: 2.5
+  yMin: -2.5
+  zMax: 2.5
+  zMin: -2.5
+--- !u!114 &114967837971804418
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2668,18 +2708,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1798509287883412}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a92eafe33fe8727429cedefb51ba4216, type: 3}
+  m_Script: {fileID: 11500000, guid: f1b12a0f85d06a84fb46c36adccb652e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_MinSpeed: 0.05
+  m_MaxSpeed: 2
+  m_speed: 2
   m_animator: {fileID: 95018887114085078}
-  m_speed: 0.8
-  m_maxSpeed: 0.8
-  xMax: 2.5
-  xMin: -2.5
-  yMax: 2.5
-  yMin: -2.5
-  zMax: 2.5
-  zMin: -2.5
 --- !u!135 &135720100022992230
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -2699,7 +2734,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1798509287883412}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.01975782
   m_Height: 0.10030076
