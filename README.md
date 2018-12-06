@@ -1,4 +1,4 @@
-https://gitlab.com/BerniceChua/Augmented_Focus
+This project has now been transferred to https://gitlab.com/BerniceChua/Augmented_Focus
 
 # Augmented Focus
 An Augmented Reality (AR) game made with Unity & C#, which challenges how long a player can keep track of a fidgety flying creature such as a hummingbird.  
